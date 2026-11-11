@@ -86,8 +86,21 @@ def parse_markdown(text: str, title: str = "POC Document") -> POCDocument:
     return doc
 
 
+# Bahasa Indonesia stopwords untuk extract_keywords
+ID_STOPWORDS = {
+    "the", "a", "an", "is", "are", "will", "shall", "should",
+    "dan", "di", "ke", "dari", "untuk", "yang", "dengan",
+    "ini", "itu", "akan", "dapat", "bisa", "pada", "atau",
+    "dan", "atau", "secara", "oleh", "dengan", "untuk",
+    "sebagai", "pada", "dari", "ke", "dalam", "ke",
+    "adalah", "ini", "itu", "saya", "kami", "anda", "mereka",
+    "dengan", "oleh", "tidak", "bisa", "harus", "saat",
+    "jika", "karena", "sampai", "hingga", "maka",
+    "akan", "bisa", "harus", "perlu", "dapat",
+}
+
 def _determine_category(text: str) -> str:
-    """Determine section category from content."""
+    """Determine section category from content (authoritative, single source)."""
     CATEGORY_KEYWORDS = {
         "functional": ["should", "must", "will", "perform", "execute",
                        "harus", "akan", "mampu", "melakukan"],
@@ -106,17 +119,32 @@ def _determine_category(text: str) -> str:
 
 
 def extract_keywords(section: Section) -> list[str]:
-    """Ekstrak kata kunci dari isi section untuk generate testcase."""
-    stopwords = {
-        "the", "a", "an", "is", "are", "will", "shall", "should",
+    """Ekstrak kata kunci dari isi section untuk generate testcase.
+
+    Ditingkatkan untuk support Bahasa Indonesia dengan:
+    - Stopwords Indonesia yang lebih lengkap
+    - Regex yang lebih fleksibel untuk kata lunga
+    """
+    # Gabungkan stopwords default dengan Indonesia
+    all_stopwords = {
+        "the", "a", "an", "is", "are", "was", "were", "be", "been",
+        "being", "have", "has", "had", "do", "does", "did",
+        "will", "shall", "should", "would", "could",
         "dan", "di", "ke", "dari", "untuk", "yang", "dengan",
         "ini", "itu", "akan", "dapat", "bisa", "pada", "atau",
+        # Indonesia
+        "adalah", "ini", "itu", "saya", "kami", "anda", "mereka",
+        "dengan", "oleh", "tidak", "bisa", "harus", "saat",
+        "jika", "karena", "sampai", "hingga", "maka",
+        "akan", "bisa", "harus", "perlu", "dapat",
+        "seperti", "sebagaimana", "sehingga", "sesuai",
     }
-    words = re.findall(r"[a-zA-Z\u00C0-\u017F]{4,}", section.content.lower())
-    # Sederhana: ambil kata yang paling sering muncul
+    # Regex: ambil kata huruf (termasuk aksent/unicode) minimal 3 karakter
+    words = re.findall(r"[a-zA-Z\u00C0-\u017F]{3,}", section.content.lower())
+    # Filter stopwords dan hitung frekuensi
     freq = {}
     for w in words:
-        if w not in stopwords:
+        if w not in all_stopwords:
             freq[w] = freq.get(w, 0) + 1
     sorted_words = sorted(freq.items(), key=lambda x: -x[1])
     return [w for w, _ in sorted_words[:10]]
