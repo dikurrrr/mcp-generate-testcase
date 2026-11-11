@@ -4,6 +4,9 @@ __pycache__
 # Ignore CODE_FIXES_SUMMARY files
 CODE_FIXES_SUMMARY*
 
+# Ignore generated testcase folder
+generated-testcases/
+
 # Ignore generated testcase CSV files
 testcases-indonesia.csv
 
