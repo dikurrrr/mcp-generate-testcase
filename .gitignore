@@ -6,3 +6,7 @@ __pycache__
 
 # Ignore CODE_FIXES_SUMMARY files
 CODE_FIXES_SUMMARY*
+
+# Ignore dokumen POC hasil konversi dan hasil generate test case
+docs/
+generated-testcases/

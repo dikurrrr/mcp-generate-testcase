@@ -14,6 +14,7 @@ class Testcase:
     priority: str          # high, medium, low
     source_section: str    # bagian dokumen POC yang jadi referensi
     tags: list[str] = field(default_factory=list)
+    kind: str = "generic"  # "rule" (hasil ekstraksi aturan) atau "generic" (template)
 
     def to_dict(self) -> dict:
         return {
@@ -26,6 +27,7 @@ class Testcase:
             "priority": self.priority,
             "source_section": self.source_section,
             "tags": self.tags,
+            "kind": self.kind,
         }
 
     def to_markdown(self) -> str:

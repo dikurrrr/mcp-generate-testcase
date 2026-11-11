@@ -10,6 +10,12 @@
   - `boundary` - Test batas input/range
   - `exception` - Test handling error/exception
   - `integration` - Test integrasi antar service/API
+- **Ekstraksi Aturan**: Selain template generic, generator menarik aturan konkret dari teks POC:
+  - batas angka (`min. 3, maks. 120 karakter`, `Qty ≥ 1`, `maks 10 MB`) → test case batas bawah/atas dan pelanggarannya
+  - pesan validasi yang dikutip (`"Judul minimal 3 karakter."`) → test case negatif dengan ekspektasi pesan persis
+  - kalimat aturan (`wajib`, `harus`, `tidak boleh`, `hanya`, `otomatis`) → test case positif + negatif
+  - endpoint (`POST /api/...`) → test case integrasi, dan opsi mode (`default X … atau Y`) → test case per opsi
+  - Setiap test case punya penanda `kind`: `rule` (hasil ekstraksi) atau `generic` (template)
 - **Prioritas Test Case**: Auto-determine prioritas (high, medium, low) berdasarkan keyword
 - **Multiple Output Format**: Support JSON, Markdown, dan Table format
 - **Keyword Extraction**: Otomatis ekstrak keyword dari konten section untuk title dan tags
@@ -67,6 +73,46 @@ Server menawarkan 3 tools yang bisa dipanggil:
 3. **`list_poc_documents`** - List file POC di directory
    - `directory`: Directory yang akan di-scan (default: `./docs`)
 
+### Konversi PDF ke POC
+
+Server ini hanya membaca file teks (`.md`/`.txt`), jadi PDF/dokumen requirement
+harus dijadikan markdown dulu:
+
+```bash
+python tools/pdf_to_poc.py 01-requisition-approval-bidding-1.pdf \
+    -o docs/01-requisition-approval-bidding.md \
+    --title "POC: Requisition, Approval, sampai Bidding"
+```
+
+Heading dideteksi dari penomoran berurutan di dokumen (`1. Judul` → `## Judul`,
+`4.2 Judul` → `### Judul`). Baris header/footer berulang dibuang lewat
+`--noise` (regex, default menangani footer "Savinix — …" dan "Halaman x / y").
+
+### Generate Semua Dokumen ke Satu File
+
+Untuk menggabungkan hasil seluruh POC di `docs/` menjadi satu set output
+(markdown, JSON, dan CSV):
+
+```bash
+python tools/generate_batch.py                 # semua test case apa adanya
+python tools/generate_batch.py --total 200     # dipangkas/dilengkapi tepat 200
+```
+
+Menghasilkan `generated-testcases/all-testcases.{md,json,csv}`. Test case
+hasil ekstraksi aturan (`kind=rule`) diprioritaskan; template generic hanya
+dipakai untuk melengkapi sampai `--total` terpenuhi. ID dirapikan ulang
+berurutan lintas dokumen (TC-001…TC-200), karena tiap dokumen memulai
+hitungan dari TC-001.
+
+Kolom CSV: `id, title, document, category, priority, kind, precondition,
+steps, expected_result, source_section, tags`. Kolom `steps` berisi satu
+langkah per baris di dalam satu sel (field di-quote sesuai standar CSV) —
+aktifkan "Wrap Text" di Excel/Google Sheets supaya terbaca penuh.
+
+Batas jumlah test case hasil ekstraksi per section diatur lewat konstanta di
+`generator.py`: `MAX_RULES_PER_SECTION`, `MAX_OBLIGATIONS_PER_SECTION`,
+`MAX_MESSAGES_PER_SECTION`, `MAX_ACTIONS_PER_SECTION`, `MAX_ENUMS_PER_SECTION`.
+
 ### Contoh File POC
 
 ```markdown
@@ -122,10 +168,15 @@ mcp-generate-testcase/
 ├── __init__.py      # Package init
 ├── CODE_FIXES_SUMMARY.md  # Ringkasan perbaikan (ter-ignore di .gitignore)
 ├── __pycache__      # Folder cache Python (ter-ignore di .gitignore)
+├── docs/            # Dokumen POC (markdown hasil konversi/penulisan manual)
+├── generated-testcases/  # Hasil generate test case
 ├── generator.py     # Logika generate test case
 ├── parser.py        # Logika parse POC document
 ├── server_adv_testcase.py  # MCP Server entry point
 ├── templates.py     # Format output Testcase
+├── tools/
+│   ├── pdf_to_poc.py  # Konversi PDF requirement menjadi markdown POC
+│   └── generate_batch.py  # Semua POC → satu file md/json/csv
 ├── requirements.txt # Dependencies
 ├── .gitignore       # Ignore pycache dan summary files
 └── README.md        # Dokumentasi ini
