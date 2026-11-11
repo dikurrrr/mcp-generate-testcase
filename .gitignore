@@ -6,18 +6,3 @@ __pycache__
 
 # Ignore CODE_FIXES_SUMMARY files
 CODE_FIXES_SUMMARY*
-
-# Ignore generated testcase folder
-generated-testcases/
-
-# Ignore generated testcase CSV files
-testcases-indonesia.csv
-
-# Ignore CSV generator script
-generate_csv.py
-
-# Ignore min-200 testcase CSV
-min-200-testcases-indonesia.csv
-
-# Ignore 200 testcase generator script
-generate-200-testcases.py
