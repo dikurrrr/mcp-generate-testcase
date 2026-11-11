@@ -1,13 +1,40 @@
 import json
 import uuid
-from parser import POCDocument, Section, extract_keywords, _determine_category
+from parser import POCDocument, Section, extract_keywords
 from templates import Testcase
+
+CATEGORY_KEYWORDS = {
+    "functional": ["should", "must", "will", "perform", "execute",
+                   "harus", "akan", "mampu", "melakukan"],
+    "boundary": ["max", "min", "limit", "range", "maximum", "minimum",
+                 "batas", "maksimal", "minimal", "ambang"],
+    "exception": ["error", "fail", "invalid", "reject", "timeout",
+                  "gagal", "tidak valid", "ditolak", "kesalahan"],
+    "integration": ["api", "endpoint", "service", "integrate", "sync",
+                    "koneks", "integrasi", "sinkron", "interface"],
+}
 
 PRIORITY_RULES = {
     "high": ["critical", "must", "harus", "fatal", "security", "auth"],
     "medium": ["should", "wajib", "normal", "standard"],
     "low": ["nice", "optional", "prefer", "saran", "rekomendasi"],
 }
+
+
+def _determine_category(text: str) -> str:
+    text_lower = text.lower()
+    for cat, keywords in CATEGORY_KEYWORDS.items():
+        if any(kw in text_lower for kw in keywords):
+            return cat
+    return "functional"
+
+
+def _determine_priority(text: str) -> str:
+    text_lower = text.lower()
+    for prio, keywords in PRIORITY_RULES.items():
+        if any(kw in text_lower for kw in keywords):
+            return prio
+    return "medium"
 
 
 def _generate_steps(section: Section, keywords: list[str]) -> list[str]:
