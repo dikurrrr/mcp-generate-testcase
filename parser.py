@@ -86,6 +86,25 @@ def parse_markdown(text: str, title: str = "POC Document") -> POCDocument:
     return doc
 
 
+def _determine_category(text: str) -> str:
+    """Determine section category from content."""
+    CATEGORY_KEYWORDS = {
+        "functional": ["should", "must", "will", "perform", "execute",
+                       "harus", "akan", "mampu", "melakukan"],
+        "boundary": ["max", "min", "limit", "range", "maximum", "minimum",
+                     "batas", "maksimal", "minimal", "ambang"],
+        "exception": ["error", "fail", "invalid", "reject", "timeout",
+                      "gagal", "tidak valid", "ditolak", "kesalahan"],
+        "integration": ["api", "endpoint", "service", "integrate", "sync",
+                        "koneks", "integrasi", "sinkron", "interface"],
+    }
+    text_lower = text.lower()
+    for cat, keywords in CATEGORY_KEYWORDS.items():
+        if any(kw in text_lower for kw in keywords):
+            return cat
+    return "functional"
+
+
 def extract_keywords(section: Section) -> list[str]:
     """Ekstrak kata kunci dari isi section untuk generate testcase."""
     stopwords = {
