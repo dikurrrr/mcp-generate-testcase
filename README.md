@@ -1,195 +1,117 @@
 # MCP Generate Testcase
 
-**MCP Generate Testcase** adalah server MCP (Model Context Protocol) yang mengotomatisasi pembuatan test case dari dokumen Proof of Concept (POC). Alat ini menganalisis struktur dokumen POC dan menghasilkan test case yang terstruktur dengan kategori, prioritas, langkah eksekusi, dan hasil yang diharapkan.
+Repository ini berisi alat otomatisasi pembuatan test case dari dokumen POC (Proof of Concept).
 
-## Fitur
+## Tujuan
 
-- **Parsing POC Document**: Baca dan parse file markdown/txt menjadi struktur section hierarkis
-- **Generasi Test Case Otomatis**: Generate test case berdasarkan rule-engine dengan 4 kategori:
-  - `functional` - Test fitur umum
-  - `boundary` - Test batas input/range
-  - `exception` - Test handling error/exception
-  - `integration` - Test integrasi antar service/API
-- **Ekstraksi Aturan**: Selain template generic, generator menarik aturan konkret dari teks POC:
-  - batas angka (`min. 3, maks. 120 karakter`, `Qty ≥ 1`, `maks 10 MB`) → test case batas bawah/atas dan pelanggarannya
-  - pesan validasi yang dikutip (`"Judul minimal 3 karakter."`) → test case negatif dengan ekspektasi pesan persis
-  - kalimat aturan (`wajib`, `harus`, `tidak boleh`, `hanya`, `otomatis`) → test case positif + negatif
-  - endpoint (`POST /api/...`) → test case integrasi, dan opsi mode (`default X … atau Y`) → test case per opsi
-  - Setiap test case punya penanda `kind`: `rule` (hasil ekstraksi) atau `generic` (template)
-- **Prioritas Test Case**: Auto-determine prioritas (high, medium, low) berdasarkan keyword
-- **Multiple Output Format**: Support JSON, Markdown, dan Table format
-- **Keyword Extraction**: Otomatis ekstrak keyword dari konten section untuk title dan tags
-- **MCP Server Protocol**: Siap untuk diintegrasikan ke dalam sistem MCP/aplikasi lain
+Membantu pengembang dan QA menghasilkan test case terstruktur dari dokumen POC (Proof of Concept) dalam format markdown, JSON, atau CSV. Generator ini diekstrak aturan dari konten POC (seperti batas nilai, ketentuan "wajib"/"harus", pesan validasi, dan lainnya) dan mengubahnya menjadi test case yang bisa langsung digunakan.
 
-## Instalasi
+## Arsitektur Saat Ini
 
-```bash
-# Clone repository
-git clone https://github.com/dikurrrr/mcp-generate-testcase.git
+Repository ini dikonsolidasikan menjadi **satu generator utama** (`tools/combined_generator.py`) yang menggantikan beberapa script lama:
 
-# Masuk ke direktori
-cd mcp-generate-testcase
+- `tools/generate_batch.py` → Digantikan oleh `combined_generator.py`
+- `generated-testcases/generate_csv.py` → Digantikan oleh `combined_generator.py`
+- `generated-testcases/generate-200-testcases.py` → Digantikan oleh `combined_generator.py`
 
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## Penggunaan
-
-### Jalankan Server MCP
-
-```bash
-python server_adv_testcase.py
-```
-
-Server akan berjalan melalui STDIO dan siap menerima perintah MCP.
-
-### Dari Kode/Python
-
-```python
-from parser import read_poc_document
-from generator import generate_testcases_with_format
-
-# Baca file POC
-doc = read_poc_document("./docs/sample-poc.md")
-
-# Generate test case (format markdown)
-result = generate_testcases_with_format(doc, max_per_section=3, fmt="markdown")
-print(result)
-```
-
-### Via MCP Tools
-
-Server menawarkan 3 tools yang bisa dipanggil:
-
-1. **`read_poc_document`** - Baca dan parse file POC
-   - `file_path`: Path ke file POC (misal: `./docs/poc-api-gateway.md`)
-
-2. **`generate_testcases`** - Generate test case dari dokumen POC
-   - `file_path`: Path ke file POC
-   - `max_per_section`: Maksimal test case per section (default: 3)
-   - `output_format`: Format output (`json`, `markdown`, `table`, default: `markdown`)
-
-3. **`list_poc_documents`** - List file POC di directory
-   - `directory`: Directory yang akan di-scan (default: `./docs`)
-
-### Konversi PDF ke POC
-
-Server ini hanya membaca file teks (`.md`/`.txt`), jadi PDF/dokumen requirement
-harus dijadikan markdown dulu:
-
-```bash
-python tools/pdf_to_poc.py 01-requisition-approval-bidding-1.pdf \
-    -o docs/01-requisition-approval-bidding.md \
-    --title "POC: Requisition, Approval, sampai Bidding"
-```
-
-Heading dideteksi dari penomoran berurutan di dokumen (`1. Judul` → `## Judul`,
-`4.2 Judul` → `### Judul`). Baris header/footer berulang dibuang lewat
-`--noise` (regex, default menangani footer "Savinix — …" dan "Halaman x / y").
-
-### Generate Semua Dokumen ke Satu File
-
-Untuk menggabungkan hasil seluruh POC di `docs/` menjadi satu set output
-(markdown, JSON, dan CSV):
-
-```bash
-python tools/generate_batch.py                 # semua test case apa adanya
-python tools/generate_batch.py --total 200     # dipangkas/dilengkapi tepat 200
-```
-
-Menghasilkan `generated-testcases/all-testcases.{md,json,csv}`. Test case
-hasil ekstraksi aturan (`kind=rule`) diprioritaskan; template generic hanya
-dipakai untuk melengkapi sampai `--total` terpenuhi. ID dirapikan ulang
-berurutan lintas dokumen (TC-001…TC-200), karena tiap dokumen memulai
-hitungan dari TC-001.
-
-Kolom CSV: `id, title, document, category, priority, kind, precondition,
-steps, expected_result, source_section, tags`. Kolom `steps` berisi satu
-langkah per baris di dalam satu sel (field di-quote sesuai standar CSV) —
-aktifkan "Wrap Text" di Excel/Google Sheets supaya terbaca penuh.
-
-Batas jumlah test case hasil ekstraksi per section diatur lewat konstanta di
-`generator.py`: `MAX_RULES_PER_SECTION`, `MAX_OBLIGATIONS_PER_SECTION`,
-`MAX_MESSAGES_PER_SECTION`, `MAX_ACTIONS_PER_SECTION`, `MAX_ENUMS_PER_SECTION`.
-
-### Contoh File POC
-
-```markdown
-# POC: API Gateway Authentication
+File-file lama dipindahkan ke folder `legacy/` untuk referensi belakang compatibilitas.
 
 ## Fitur Utama
 
-User harus melakukan login sebelum mengakses endpoint tertentu.
-Sistem akan menolak akses jika token expired.
+- **Generate Test Case dari POC**: Membaca file `.md`/`.txt` dan menghasilkan test case berdasarkan rule-engine
+- **3 Format Output**: CSV (dengan kolom `steps` berformat berurutan), JSON, dan Markdown
+- **Bahasa Indonesia**: Opsi label bahasa Indonesia (`--lang id`)
+- **Timestamp di Nama File**: Nama file CSV mencakup tanggal pembuatan (`all-testcases-2026-11-12.csv`)
+- **Tracking Dokument**: Setiap test case mencakup field `document` menunjuk ke file POC asal
+- **Kontrol Jumlah**: Parameter `--total` untuk membatasi jumlah test case yang dihasilkan
 
-## Endpoint Auth
-
-POST /api/auth/login
-- Request: username dan password
-- Response: JWT token
-```
-
-## Output Hasil
-
-Test case akan dihasilkan dengan struktur berikut:
-
-```markdown
-# Test Test API Gateway Authentication - scenario 1 (login)
-
-## Precondition
-User telah login / sistem dalam kondisi ready (ref: sample-poc)
-
-## Steps
-- Siapkan lingkungan yang sesuai dengan syarat: login
-- Akses modul/layanan terkait 'login'
-- Jalankan operasi: login
-- Verifikasi output sesuai dengan spesifikasi POC
-
-## Expected Result
-Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.
-
-## Priority
-medium
-
-## Source Section
-Fitur Utama
-
-## Tags
-- login
-- functional
-- sample-poc
-```
-
-## Struktur Project
+## Struktur Folder
 
 ```
 mcp-generate-testcase/
-├── __init__.py      # Package init
-├── CODE_FIXES_SUMMARY.md  # Ringkasan perbaikan (ter-ignore di .gitignore)
-├── __pycache__      # Folder cache Python (ter-ignore di .gitignore)
-├── docs/            # Dokumen POC (markdown hasil konversi/penulisan manual)
-├── generated-testcases/  # Hasil generate test case
-├── generator.py     # Logika generate test case
-├── parser.py        # Logika parse POC document
-├── server_adv_testcase.py  # MCP Server entry point
-├── templates.py     # Format output Testcase
+├── legacy/              # File lama (disimpan untuk referensi)
+│   ├── generate_batch.py
+│   ├── generate_csv.py
+│   └── generate-200-testcases.py
 ├── tools/
-│   ├── pdf_to_poc.py  # Konversi PDF requirement menjadi markdown POC
-│   └── generate_batch.py  # Semua POC → satu file md/json/csv
-├── requirements.txt # Dependencies
-├── .gitignore       # Ignore pycache dan summary files
-└── README.md        # Dokumentasi ini
+│   ├── combined_generator.py   # Generator utama (1 file gabungan)
+│   ├── ocr_pdf.swift         # Helper OCR PDF scan (macOS Vision)
+│   └── pdf_to_poc.py         # Konversi PDF → markdown POC
+├── generated-testcases/   # Output test case (CSV/JSON/MD)
+├── docs/                # Folder dokumen POC
+├── generator.py         # Modul inti (dipakai combined_generator.py)
+├── parser.py            # Modul baca POC
+├── requirements.txt
+└── README.md
 ```
+
+## Cara Pakai
+
+### Generate Test Case
+
+```bash
+# English (default)
+python3 tools/combined_generator.py --total 10
+
+# Bahasa Indonesia
+python3 tools/combined_generator.py --total 10 --lang id
+
+# Generate minimal 200 test case dari file POC tertentu
+python3 tools/combined_generator.py --min-200 \
+  --poc-files "doc1.md" "doc2.md"
+```
+
+### Output yang Dihasilkan
+
+Setiap eksekusi menghasilkan 3 file di `generated-testcases/`:
+- `all-testcases{x}.{en,id}.md` - Format baca Markdown
+- `all-testcases{x}.{en,id}.json` - Format JSON lengkap
+- `all-testcases{x}.{en,id}.csv` - Format CSV (11 kolom E, 9 kolom I)
+
+Contoh CSV (English):
+```csv
+id,title,document,category,priority,kind,precondition,steps,expected_result,source_section,tags
+TC-001,"Test aturan: Aplikasi harus...","01-requisition-approval-bidding","exception","high","rule","Precondition text","1. Siapkan kondisi...","Sistem berperilaku...","Fitur, exception, rule-sentence"
+```
+
+Contoh CSV (Indonesia):
+```csv
+ID,Judul,Kategori,Prioritas,Prasyarat,Langkah,Hasil yang Diharapkan,Sumber Section,Tag
+TC-001,"Test aturan: Aplikasi harus...","exception","medium","Form...","1. Siapkan kondisi...","Sistem menolak...","Fitur, exception, rule-sentence"
+```
+
+### Konversi PDF ke POC
+
+```bash
+python3 tools/pdf_to_poc.py <file.pdf> -o docs/<file>.md --title "<Judul>"
+```
+
+Atau gunakan helper Swift:
+```bash
+swift tools/ocr_pdf.swift <file.pdf> /tmp/output.txt
+```
+
+### Generate dari File POC Tertentu (mode --min-200)
+
+```bash
+python3 tools/combined_generator.py --min-200 \
+  --poc-files "CODE_FIXES_SUMMARY.md" "README.md"
+```
+
+## File yang Sudah Ada
+
+- `generated-testcases/` - Berisi hasil generate dari eksekusi sebelumnya
+- `legacy/` - File lama yang masih dapat diakses untuk referensi
+- `docs/` - Folder kosong menanti dokumen POC user
 
 ## Dependencies
 
-Lihat `requirements.txt` untuk daftar library yang diperlukan. Library utama meliputi `mcp-server` untuk protokol MCP.
+Lihat `requirements.txt` untuk daftar library yang diperlukan.
 
 ## Kontribusi
 
 1. Fork repository
-2. Buat branch fitur (`git checkout -b fitur-baru`)
-3. Commit perubahan (`git commit -m 'Menambahkan fitur X'`)
-4. Push ke branch (`git push origin fitur-baru`)
+2. Buat branch fitur
+3. Commit perubahan
+4. Push ke branch
 5. Buat Pull Request
