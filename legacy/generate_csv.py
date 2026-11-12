@@ -1,3 +1,5 @@
+# DEPRECATED: This file is kept for historical reference.
+# Please use tools/combined_generator.py for all test case generation needs.
 #!/usr/bin/env python3
 """Generate testcases from POC and export to CSV with Indonesian labels."""
 

@@ -1,0 +1,680 @@
+ID,Judul,Kategori,Prioritas,Prasyarat,Langkah,Hasil yang Diharapkan,Sumber Section,Tag
+TC-001,Test aturan: Aplikasi harus mampu menghandle request biaya distributor untuk kat…,fungsi,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus mampu menghandle request biaya distributor untuk kategori **non-budget** dan **over-budget** dari semua kantor cabang.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus mampu menghandle request biaya distributor untuk kategori **non-budget** dan **over-budget** dari semua kantor cabang."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, fungsi, rule-sentence"
+TC-002,Test aturan (negatif): Aplikasi harus mampu menghandle request biaya distributor untuk kat…,exception,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus mampu menghandle request biaya distributor untuk kategori **non-budget** dan **over-budget** dari semua kantor cabang.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus mampu menghandle request biaya distributor untuk kategori **non-budget** dan **over-budget** dari semua kantor cabang."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, exception, rule-sentence"
+TC-003,Test aturan: Aplikasi harus mampu menampilkan leading time untuk setiap process…,fungsi,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus mampu menampilkan leading time untuk setiap process request.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus mampu menampilkan leading time untuk setiap process request."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, fungsi, rule-sentence"
+TC-004,Test aturan (negatif): Aplikasi harus mampu menampilkan leading time untuk setiap process…,exception,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus mampu menampilkan leading time untuk setiap process request.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus mampu menampilkan leading time untuk setiap process request."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, exception, rule-sentence"
+TC-005,Test aturan: Aplikasi harus mampu menampilkan delay untuk masing-masing activity…,fungsi,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus mampu menampilkan delay untuk masing-masing activity atau approval.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus mampu menampilkan delay untuk masing-masing activity atau approval."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, fungsi, rule-sentence"
+TC-006,Test aturan (negatif): Aplikasi harus mampu menampilkan delay untuk masing-masing activity…,exception,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus mampu menampilkan delay untuk masing-masing activity atau approval.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus mampu menampilkan delay untuk masing-masing activity atau approval."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, exception, rule-sentence"
+TC-007,Test aturan: Aplikasi harus mampu menampilkan delay rata-rata untuk masing-masin…,fungsi,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus mampu menampilkan delay rata-rata untuk masing-masing activity atau approval.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus mampu menampilkan delay rata-rata untuk masing-masing activity atau approval."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, fungsi, rule-sentence"
+TC-008,Test aturan (negatif): Aplikasi harus mampu menampilkan delay rata-rata untuk masing-masin…,exception,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus mampu menampilkan delay rata-rata untuk masing-masing activity atau approval.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus mampu menampilkan delay rata-rata untuk masing-masing activity atau approval."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, exception, rule-sentence"
+TC-009,Test aturan: Aplikasi harus mampu men-generate report menggunakan Jasper Report.,fungsi,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus mampu men-generate report menggunakan Jasper Report.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus mampu men-generate report menggunakan Jasper Report."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, fungsi, rule-sentence"
+TC-010,Test aturan (negatif): Aplikasi harus mampu men-generate report menggunakan Jasper Report.,exception,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus mampu men-generate report menggunakan Jasper Report.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus mampu men-generate report menggunakan Jasper Report."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, exception, rule-sentence"
+TC-011,Test aturan: Aplikasi harus mampu melakukan tracking untuk setiap request.,fungsi,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus mampu melakukan tracking untuk setiap request.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus mampu melakukan tracking untuk setiap request."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, fungsi, rule-sentence"
+TC-012,Test aturan (negatif): Aplikasi harus mampu melakukan tracking untuk setiap request.,exception,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus mampu melakukan tracking untuk setiap request.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus mampu melakukan tracking untuk setiap request."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, exception, rule-sentence"
+TC-013,Test aturan: Aplikasi harus mampu menampilkan SLA untuk setiap activity.,fungsi,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus mampu menampilkan SLA untuk setiap activity.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus mampu menampilkan SLA untuk setiap activity."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, fungsi, rule-sentence"
+TC-014,Test aturan (negatif): Aplikasi harus mampu menampilkan SLA untuk setiap activity.,exception,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus mampu menampilkan SLA untuk setiap activity.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus mampu menampilkan SLA untuk setiap activity."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, exception, rule-sentence"
+TC-015,Test aturan: Aplikasi harus mampu menampilkan daftar pending untuk setiap request.,fungsi,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus mampu menampilkan daftar pending untuk setiap request.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus mampu menampilkan daftar pending untuk setiap request."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, fungsi, rule-sentence"
+TC-016,Test aturan (negatif): Aplikasi harus mampu menampilkan daftar pending untuk setiap request.,exception,tinggi,User berada di bagian '1. Tujuan dan Ruang Lingkup' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus mampu menampilkan daftar pending untuk setiap request.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus mampu menampilkan daftar pending untuk setiap request."".",1. Tujuan dan Ruang Lingkup,"1. Tujuan dan Ruang Lingkup, exception, rule-sentence"
+TC-017,Test aturan: Skenario demo yang harus dapat didemokan: Satu siklus request biaya…,fungsi,tinggi,User berada di bagian '3. Alur Pengajuan Request Biaya' dan sudah login,"1. Siapkan kondisi sesuai aturan: Skenario demo yang harus dapat didemokan: Satu siklus request biaya non-budget dengan 1 kasus revisi di Kepala Administrasi.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Skenario demo yang harus dapat didemokan: Satu siklus request biaya non-budget dengan 1 kasus revisi di Kepala Administrasi."".",3. Alur Pengajuan Request Biaya,"3. Alur Pengajuan Request Biaya, fungsi, rule-sentence"
+TC-018,Test aturan (negatif): Skenario demo yang harus dapat didemokan: Satu siklus request biaya…,exception,tinggi,User berada di bagian '3. Alur Pengajuan Request Biaya' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Skenario demo yang harus dapat didemokan: Satu siklus request biaya non-budget dengan 1 kasus revisi di Kepala Administrasi.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Skenario demo yang harus dapat didemokan: Satu siklus request biaya non-budget dengan 1 kasus revisi di Kepala Administrasi."".",3. Alur Pengajuan Request Biaya,"3. Alur Pengajuan Request Biaya, exception, rule-sentence"
+TC-019,"Test aturan: Request Biaya Distributor - Kantor Cabang, judul form memakai nomor…",fungsi,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi sesuai aturan: Request Biaya Distributor - Kantor Cabang, judul form memakai nomor form `form.request_biaya.kantor_cabang` dan nomor request otomatis (AUTO).
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Request Biaya Distributor - Kantor Cabang, judul form memakai nomor form `form.request_biaya.kantor_cabang` dan nomor request otomatis (AUTO)."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, fungsi, rule-sentence"
+TC-020,Test aturan: Field pada form: | Field | Wajib | Aturan | | --- | --- | --- | | T…,fungsi,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi sesuai aturan: Field pada form: | Field | Wajib | Aturan | | --- | --- | --- | | Tanggal | Ya | Terisi otomatis saat form dibuka, contoh 26-September-2017 11:09 AM | |…
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Field pada form: | Field | Wajib | Aturan | | --- | --- | --- | | Tanggal | Ya | Terisi otomatis saat form dibuka, contoh 26-September-2017 11:09 AM | |…"".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, fungsi, rule-sentence"
+TC-021,Test aturan (negatif): Field pada form: | Field | Wajib | Aturan | | --- | --- | --- | | T…,exception,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Field pada form: | Field | Wajib | Aturan | | --- | --- | --- | | Tanggal | Ya | Terisi otomatis saat form dibuka, contoh 26-September-2017 11:09 AM | |…
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Field pada form: | Field | Wajib | Aturan | | --- | --- | --- | | Tanggal | Ya | Terisi otomatis saat form dibuka, contoh 26-September-2017 11:09 AM | |…"".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, exception, rule-sentence"
+TC-022,Test aturan: Aturan form: Total Biaya Pengajuan harus sama dengan penjumlahan se…,fungsi,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aturan form: Total Biaya Pengajuan harus sama dengan penjumlahan seluruh baris Jumlah.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aturan form: Total Biaya Pengajuan harus sama dengan penjumlahan seluruh baris Jumlah."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, fungsi, rule-sentence"
+TC-023,Test aturan (negatif): Aturan form: Total Biaya Pengajuan harus sama dengan penjumlahan se…,exception,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aturan form: Total Biaya Pengajuan harus sama dengan penjumlahan seluruh baris Jumlah.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aturan form: Total Biaya Pengajuan harus sama dengan penjumlahan seluruh baris Jumlah."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, exception, rule-sentence"
+TC-024,Test aturan: Jumlah per baris harus sama dengan Quantity dikali Harga.,fungsi,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi sesuai aturan: Jumlah per baris harus sama dengan Quantity dikali Harga.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Jumlah per baris harus sama dengan Quantity dikali Harga."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, fungsi, rule-sentence"
+TC-025,Test aturan (negatif): Jumlah per baris harus sama dengan Quantity dikali Harga.,exception,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Jumlah per baris harus sama dengan Quantity dikali Harga.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Jumlah per baris harus sama dengan Quantity dikali Harga."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, exception, rule-sentence"
+TC-026,Test aturan: Request tidak boleh disubmit jika field wajib belum lengkap.,exception,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi normal pada '4. Form Submit Request Biaya'
+2. Coba langgar aturan: Request tidak boleh disubmit jika field wajib belum lengkap.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Request tidak boleh disubmit jika field wajib belum lengkap."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, exception, rule-sentence"
+TC-027,Test aturan: Minimal harus ada satu baris rincian permintaan sebelum submit.,exception,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi normal pada '4. Form Submit Request Biaya'
+2. Coba langgar aturan: Minimal harus ada satu baris rincian permintaan sebelum submit.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Minimal harus ada satu baris rincian permintaan sebelum submit."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, exception, rule-sentence"
+TC-028,Test aturan: Quantity dan Harga tidak boleh bernilai nol atau negatif.,exception,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi normal pada '4. Form Submit Request Biaya'
+2. Coba langgar aturan: Quantity dan Harga tidak boleh bernilai nol atau negatif.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Quantity dan Harga tidak boleh bernilai nol atau negatif."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, exception, rule-sentence"
+TC-029,Test aturan: Nilai Harga maksimal 15 digit dan tidak boleh mengandung karakter s…,exception,tinggi,User berada di bagian '4. Form Submit Request Biaya' dan sudah login,"1. Siapkan kondisi normal pada '4. Form Submit Request Biaya'
+2. Coba langgar aturan: Nilai Harga maksimal 15 digit dan tidak boleh mengandung karakter selain angka dan pemisah desimal.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Nilai Harga maksimal 15 digit dan tidak boleh mengandung karakter selain angka dan pemisah desimal."".",4. Form Submit Request Biaya,"4. Form Submit Request Biaya, exception, rule-sentence"
+TC-030,Test aturan: Aturan daftar pending: Hanya request yang masih berstatus Running d…,exception,tinggi,User berada di bagian '5. Daftar Pending' dan sudah login,"1. Siapkan kondisi normal pada '5. Daftar Pending'
+2. Coba langgar aturan: Aturan daftar pending: Hanya request yang masih berstatus Running dan ditugaskan ke user login yang tampil.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Aturan daftar pending: Hanya request yang masih berstatus Running dan ditugaskan ke user login yang tampil."".",5. Daftar Pending,"5. Daftar Pending, exception, rule-sentence"
+TC-031,Test aturan: Request yang sudah closed atau rejected tidak boleh tampil di dafta…,exception,tinggi,User berada di bagian '5. Daftar Pending' dan sudah login,"1. Siapkan kondisi normal pada '5. Daftar Pending'
+2. Coba langgar aturan: Request yang sudah closed atau rejected tidak boleh tampil di daftar pending.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Request yang sudah closed atau rejected tidak boleh tampil di daftar pending."".",5. Daftar Pending,"5. Daftar Pending, exception, rule-sentence"
+TC-032,"Test aturan: Daftar pending harus dapat diexport ke CSV, Excel, XML, dan PDF.",fungsi,tinggi,User berada di bagian '5. Daftar Pending' dan sudah login,"1. Siapkan kondisi sesuai aturan: Daftar pending harus dapat diexport ke CSV, Excel, XML, dan PDF.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Daftar pending harus dapat diexport ke CSV, Excel, XML, dan PDF."".",5. Daftar Pending,"5. Daftar Pending, fungsi, rule-sentence"
+TC-033,"Test aturan (negatif): Daftar pending harus dapat diexport ke CSV, Excel, XML, dan PDF.",exception,tinggi,User berada di bagian '5. Daftar Pending' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Daftar pending harus dapat diexport ke CSV, Excel, XML, dan PDF.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Daftar pending harus dapat diexport ke CSV, Excel, XML, dan PDF."".",5. Daftar Pending,"5. Daftar Pending, exception, rule-sentence"
+TC-034,Test aturan: Pencarian dan filter berdasarkan Jenis Anggaran harus berfungsi pad…,fungsi,tinggi,User berada di bagian '5. Daftar Pending' dan sudah login,"1. Siapkan kondisi sesuai aturan: Pencarian dan filter berdasarkan Jenis Anggaran harus berfungsi pada daftar pending.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Pencarian dan filter berdasarkan Jenis Anggaran harus berfungsi pada daftar pending."".",5. Daftar Pending,"5. Daftar Pending, fungsi, rule-sentence"
+TC-035,Test aturan (negatif): Pencarian dan filter berdasarkan Jenis Anggaran harus berfungsi pad…,exception,tinggi,User berada di bagian '5. Daftar Pending' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Pencarian dan filter berdasarkan Jenis Anggaran harus berfungsi pada daftar pending.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Pencarian dan filter berdasarkan Jenis Anggaran harus berfungsi pada daftar pending."".",5. Daftar Pending,"5. Daftar Pending, exception, rule-sentence"
+TC-036,Test aturan: Setiap request harus dapat ditracking melalui halaman Process Statu…,fungsi,tinggi,User berada di bagian '6. Tracking Request' dan sudah login,"1. Siapkan kondisi sesuai aturan: Setiap request harus dapat ditracking melalui halaman Process Status yang menampilkan: Posisi activity saat ini (contoh: Submit Distributor/Finance Cabang,…
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Setiap request harus dapat ditracking melalui halaman Process Status yang menampilkan: Posisi activity saat ini (contoh: Submit Distributor/Finance Cabang,…"".",6. Tracking Request,"6. Tracking Request, fungsi, rule-sentence"
+TC-037,Test aturan (negatif): Setiap request harus dapat ditracking melalui halaman Process Statu…,exception,tinggi,User berada di bagian '6. Tracking Request' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Setiap request harus dapat ditracking melalui halaman Process Status yang menampilkan: Posisi activity saat ini (contoh: Submit Distributor/Finance Cabang,…
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Setiap request harus dapat ditracking melalui halaman Process Status yang menampilkan: Posisi activity saat ini (contoh: Submit Distributor/Finance Cabang,…"".",6. Tracking Request,"6. Tracking Request, exception, rule-sentence"
+TC-038,Test aturan: Aturan tracking: Tracking harus menampilkan seluruh activity yang s…,exception,tinggi,User berada di bagian '6. Tracking Request' dan sudah login,"1. Siapkan kondisi normal pada '6. Tracking Request'
+2. Coba langgar aturan: Aturan tracking: Tracking harus menampilkan seluruh activity yang sudah dan belum dilalui dalam satu process instance.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Aturan tracking: Tracking harus menampilkan seluruh activity yang sudah dan belum dilalui dalam satu process instance."".",6. Tracking Request,"6. Tracking Request, exception, rule-sentence"
+TC-039,Test aturan: Nomor process instance harus unik untuk setiap request dan dipakai…,fungsi,tinggi,User berada di bagian '6. Tracking Request' dan sudah login,"1. Siapkan kondisi sesuai aturan: Nomor process instance harus unik untuk setiap request dan dipakai sebagai kunci pelaporan.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Nomor process instance harus unik untuk setiap request dan dipakai sebagai kunci pelaporan."".",6. Tracking Request,"6. Tracking Request, fungsi, rule-sentence"
+TC-040,Test aturan (negatif): Nomor process instance harus unik untuk setiap request dan dipakai…,exception,tinggi,User berada di bagian '6. Tracking Request' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Nomor process instance harus unik untuk setiap request dan dipakai sebagai kunci pelaporan.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Nomor process instance harus unik untuk setiap request dan dipakai sebagai kunci pelaporan."".",6. Tracking Request,"6. Tracking Request, exception, rule-sentence"
+TC-041,Test aturan: Request yang tidak ditemukan harus menampilkan pesan data tidak dit…,fungsi,tinggi,User berada di bagian '6. Tracking Request' dan sudah login,"1. Siapkan kondisi sesuai aturan: Request yang tidak ditemukan harus menampilkan pesan data tidak ditemukan, bukan halaman error.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Request yang tidak ditemukan harus menampilkan pesan data tidak ditemukan, bukan halaman error."".",6. Tracking Request,"6. Tracking Request, fungsi, rule-sentence"
+TC-042,Test aturan (negatif): Request yang tidak ditemukan harus menampilkan pesan data tidak dit…,exception,tinggi,User berada di bagian '6. Tracking Request' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Request yang tidak ditemukan harus menampilkan pesan data tidak ditemukan, bukan halaman error.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Request yang tidak ditemukan harus menampilkan pesan data tidak ditemukan, bukan halaman error."".",6. Tracking Request,"6. Tracking Request, exception, rule-sentence"
+TC-043,"Test aturan: Report harus dapat diprint dan diexport ke CSV, Excel, XML, dan PDF.",fungsi,tinggi,User berada di bagian '7.1 Task Performance' dan sudah login,"1. Siapkan kondisi sesuai aturan: Report harus dapat diprint dan diexport ke CSV, Excel, XML, dan PDF.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Report harus dapat diprint dan diexport ke CSV, Excel, XML, dan PDF."".",7.1 Task Performance,"7.1 Task Performance, fungsi, rule-sentence"
+TC-044,"Test aturan (negatif): Report harus dapat diprint dan diexport ke CSV, Excel, XML, dan PDF.",exception,tinggi,User berada di bagian '7.1 Task Performance' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Report harus dapat diprint dan diexport ke CSV, Excel, XML, dan PDF.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Report harus dapat diprint dan diexport ke CSV, Excel, XML, dan PDF."".",7.1 Task Performance,"7.1 Task Performance, exception, rule-sentence"
+TC-045,Test aturan: Aturan: Report per activity harus memfilter hanya activity yang dip…,exception,tinggi,User berada di bagian '7.2 Performance Report by Approval' dan sudah login,"1. Siapkan kondisi normal pada '7.2 Performance Report by Approval'
+2. Coba langgar aturan: Aturan: Report per activity harus memfilter hanya activity yang dipilih.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Aturan: Report per activity harus memfilter hanya activity yang dipilih."".",7.2 Performance Report by Approval,"7.2 Performance Report by Approval, exception, rule-sentence"
+TC-046,"Test aturan: Jika activity belum pernah dieksekusi, report harus menampilkan dat…",exception,tinggi,User berada di bagian '7.2 Performance Report by Approval' dan sudah login,"1. Siapkan kondisi normal pada '7.2 Performance Report by Approval'
+2. Coba langgar aturan: Jika activity belum pernah dieksekusi, report harus menampilkan data kosong tanpa error.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Jika activity belum pernah dieksekusi, report harus menampilkan data kosong tanpa error."".",7.2 Performance Report by Approval,"7.2 Performance Report by Approval, exception, rule-sentence"
+TC-047,Test aturan: Assignee tanpa task tidak boleh menyebabkan pembagian nol.,exception,tinggi,User berada di bagian '7.3 Average Delay' dan sudah login,"1. Siapkan kondisi normal pada '7.3 Average Delay'
+2. Coba langgar aturan: Assignee tanpa task tidak boleh menyebabkan pembagian nol.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Assignee tanpa task tidak boleh menyebabkan pembagian nol."".",7.3 Average Delay,"7.3 Average Delay, exception, rule-sentence"
+TC-048,Test aturan: Nilai rata-rata harus konsisten dengan data pada report Task Perfor…,fungsi,tinggi,User berada di bagian '7.3 Average Delay' dan sudah login,"1. Siapkan kondisi sesuai aturan: Nilai rata-rata harus konsisten dengan data pada report Task Performance.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Nilai rata-rata harus konsisten dengan data pada report Task Performance."".",7.3 Average Delay,"7.3 Average Delay, fungsi, rule-sentence"
+TC-049,Test aturan (negatif): Nilai rata-rata harus konsisten dengan data pada report Task Perfor…,exception,tinggi,User berada di bagian '7.3 Average Delay' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Nilai rata-rata harus konsisten dengan data pada report Task Performance.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Nilai rata-rata harus konsisten dengan data pada report Task Performance."".",7.3 Average Delay,"7.3 Average Delay, exception, rule-sentence"
+TC-050,"Test aturan: Leading time harus dihitung per process request, bukan per activity.",fungsi,tinggi,User berada di bagian '7.4 Leading Time' dan sudah login,"1. Siapkan kondisi sesuai aturan: Leading time harus dihitung per process request, bukan per activity.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Leading time harus dihitung per process request, bukan per activity."".",7.4 Leading Time,"7.4 Leading Time, fungsi, rule-sentence"
+TC-051,"Test aturan (negatif): Leading time harus dihitung per process request, bukan per activity.",exception,tinggi,User berada di bagian '7.4 Leading Time' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Leading time harus dihitung per process request, bukan per activity.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Leading time harus dihitung per process request, bukan per activity."".",7.4 Leading Time,"7.4 Leading Time, exception, rule-sentence"
+TC-052,"Test aturan: Semua report (Task Performance, Performance Report by Approval, Ave…",fungsi,tinggi,User berada di bagian '7.5 Generate Report Jasper' dan sudah login,"1. Siapkan kondisi sesuai aturan: Semua report (Task Performance, Performance Report by Approval, Average Delay, Leading Time, SLA Report) harus dapat digenerate menggunakan Jasper Report…
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Semua report (Task Performance, Performance Report by Approval, Average Delay, Leading Time, SLA Report) harus dapat digenerate menggunakan Jasper Report…"".",7.5 Generate Report Jasper,"7.5 Generate Report Jasper, fungsi, rule-sentence"
+TC-053,"Test aturan (negatif): Semua report (Task Performance, Performance Report by Approval, Ave…",exception,tinggi,User berada di bagian '7.5 Generate Report Jasper' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Semua report (Task Performance, Performance Report by Approval, Average Delay, Leading Time, SLA Report) harus dapat digenerate menggunakan Jasper Report…
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Semua report (Task Performance, Performance Report by Approval, Average Delay, Leading Time, SLA Report) harus dapat digenerate menggunakan Jasper Report…"".",7.5 Generate Report Jasper,"7.5 Generate Report Jasper, exception, rule-sentence"
+TC-054,"Test aturan: Aturan: File PDF hasil generate harus memuat nama report, nama peru…",fungsi,tinggi,User berada di bagian '7.5 Generate Report Jasper' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aturan: File PDF hasil generate harus memuat nama report, nama perusahaan, dan tanggal cetak.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aturan: File PDF hasil generate harus memuat nama report, nama perusahaan, dan tanggal cetak."".",7.5 Generate Report Jasper,"7.5 Generate Report Jasper, fungsi, rule-sentence"
+TC-055,"Test aturan (negatif): Aturan: File PDF hasil generate harus memuat nama report, nama peru…",exception,tinggi,User berada di bagian '7.5 Generate Report Jasper' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aturan: File PDF hasil generate harus memuat nama report, nama perusahaan, dan tanggal cetak.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aturan: File PDF hasil generate harus memuat nama report, nama perusahaan, dan tanggal cetak."".",7.5 Generate Report Jasper,"7.5 Generate Report Jasper, exception, rule-sentence"
+TC-056,"Test aturan: Jika data kosong, report tetap harus tergenerate dengan keterangan…",fungsi,tinggi,User berada di bagian '7.5 Generate Report Jasper' dan sudah login,"1. Siapkan kondisi sesuai aturan: Jika data kosong, report tetap harus tergenerate dengan keterangan tidak ada data.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Jika data kosong, report tetap harus tergenerate dengan keterangan tidak ada data."".",7.5 Generate Report Jasper,"7.5 Generate Report Jasper, fungsi, rule-sentence"
+TC-057,"Test aturan (negatif): Jika data kosong, report tetap harus tergenerate dengan keterangan…",exception,tinggi,User berada di bagian '7.5 Generate Report Jasper' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Jika data kosong, report tetap harus tergenerate dengan keterangan tidak ada data.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Jika data kosong, report tetap harus tergenerate dengan keterangan tidak ada data."".",7.5 Generate Report Jasper,"7.5 Generate Report Jasper, exception, rule-sentence"
+TC-058,Test aturan: Proses generate report yang gagal harus menampilkan pesan kesalahan…,fungsi,tinggi,User berada di bagian '7.5 Generate Report Jasper' dan sudah login,"1. Siapkan kondisi sesuai aturan: Proses generate report yang gagal harus menampilkan pesan kesalahan yang jelas.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Proses generate report yang gagal harus menampilkan pesan kesalahan yang jelas."".",7.5 Generate Report Jasper,"7.5 Generate Report Jasper, fungsi, rule-sentence"
+TC-059,Test aturan (negatif): Proses generate report yang gagal harus menampilkan pesan kesalahan…,exception,tinggi,User berada di bagian '7.5 Generate Report Jasper' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Proses generate report yang gagal harus menampilkan pesan kesalahan yang jelas.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Proses generate report yang gagal harus menampilkan pesan kesalahan yang jelas."".",7.5 Generate Report Jasper,"7.5 Generate Report Jasper, exception, rule-sentence"
+TC-060,Test aturan: Aturan: Setiap activity harus memiliki target SLA yang dapat dikonf…,fungsi,tinggi,User berada di bagian '8. SLA Report' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aturan: Setiap activity harus memiliki target SLA yang dapat dikonfigurasi.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aturan: Setiap activity harus memiliki target SLA yang dapat dikonfigurasi."".",8. SLA Report,"8. SLA Report, fungsi, rule-sentence"
+TC-061,Test aturan (negatif): Aturan: Setiap activity harus memiliki target SLA yang dapat dikonf…,exception,tinggi,User berada di bagian '8. SLA Report' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aturan: Setiap activity harus memiliki target SLA yang dapat dikonfigurasi.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aturan: Setiap activity harus memiliki target SLA yang dapat dikonfigurasi."".",8. SLA Report,"8. SLA Report, exception, rule-sentence"
+TC-062,"Test aturan: Activity yang task-nya belum ada harus menampilkan nilai 0, bukan e…",exception,tinggi,User berada di bagian '8. SLA Report' dan sudah login,"1. Siapkan kondisi normal pada '8. SLA Report'
+2. Coba langgar aturan: Activity yang task-nya belum ada harus menampilkan nilai 0, bukan error.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Activity yang task-nya belum ada harus menampilkan nilai 0, bukan error."".",8. SLA Report,"8. SLA Report, exception, rule-sentence"
+TC-063,"Test aturan: Aturan create task delegation: Field Assignment User, Replacement U…",fungsi,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aturan create task delegation: Field Assignment User, Replacement User, Start Date, dan End Date wajib diisi.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aturan create task delegation: Field Assignment User, Replacement User, Start Date, dan End Date wajib diisi."".",9. Task Delegation,"9. Task Delegation, fungsi, rule-sentence"
+TC-064,"Test aturan (negatif): Aturan create task delegation: Field Assignment User, Replacement U…",exception,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aturan create task delegation: Field Assignment User, Replacement User, Start Date, dan End Date wajib diisi.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aturan create task delegation: Field Assignment User, Replacement User, Start Date, dan End Date wajib diisi."".",9. Task Delegation,"9. Task Delegation, exception, rule-sentence"
+TC-065,Test aturan: Start Date harus lebih kecil atau sama dengan End Date.,fungsi,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi sesuai aturan: Start Date harus lebih kecil atau sama dengan End Date.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Start Date harus lebih kecil atau sama dengan End Date."".",9. Task Delegation,"9. Task Delegation, fungsi, rule-sentence"
+TC-066,Test aturan (negatif): Start Date harus lebih kecil atau sama dengan End Date.,exception,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Start Date harus lebih kecil atau sama dengan End Date.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Start Date harus lebih kecil atau sama dengan End Date."".",9. Task Delegation,"9. Task Delegation, exception, rule-sentence"
+TC-067,Test aturan: End Date tidak boleh di masa lalu saat delegasi dibuat.,exception,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi normal pada '9. Task Delegation'
+2. Coba langgar aturan: End Date tidak boleh di masa lalu saat delegasi dibuat.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""End Date tidak boleh di masa lalu saat delegasi dibuat."".",9. Task Delegation,"9. Task Delegation, exception, rule-sentence"
+TC-068,Test aturan: Assignment User dan Replacement User tidak boleh orang yang sama.,exception,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi normal pada '9. Task Delegation'
+2. Coba langgar aturan: Assignment User dan Replacement User tidak boleh orang yang sama.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Assignment User dan Replacement User tidak boleh orang yang sama."".",9. Task Delegation,"9. Task Delegation, exception, rule-sentence"
+TC-069,"Test aturan: Selama periode delegasi, task milik Assignment User harus muncul di…",fungsi,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi sesuai aturan: Selama periode delegasi, task milik Assignment User harus muncul di daftar pending Replacement User.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Selama periode delegasi, task milik Assignment User harus muncul di daftar pending Replacement User."".",9. Task Delegation,"9. Task Delegation, fungsi, rule-sentence"
+TC-070,"Test aturan (negatif): Selama periode delegasi, task milik Assignment User harus muncul di…",exception,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Selama periode delegasi, task milik Assignment User harus muncul di daftar pending Replacement User.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Selama periode delegasi, task milik Assignment User harus muncul di daftar pending Replacement User."".",9. Task Delegation,"9. Task Delegation, exception, rule-sentence"
+TC-071,"Test aturan: Setelah End Date lewat, task harus kembali ke Assignment User.",fungsi,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi sesuai aturan: Setelah End Date lewat, task harus kembali ke Assignment User.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Setelah End Date lewat, task harus kembali ke Assignment User."".",9. Task Delegation,"9. Task Delegation, fungsi, rule-sentence"
+TC-072,"Test aturan (negatif): Setelah End Date lewat, task harus kembali ke Assignment User.",exception,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Setelah End Date lewat, task harus kembali ke Assignment User.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Setelah End Date lewat, task harus kembali ke Assignment User."".",9. Task Delegation,"9. Task Delegation, exception, rule-sentence"
+TC-073,Test aturan: Delegasi harus dapat diedit dan dibatalkan.,fungsi,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi sesuai aturan: Delegasi harus dapat diedit dan dibatalkan.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Delegasi harus dapat diedit dan dibatalkan."".",9. Task Delegation,"9. Task Delegation, fungsi, rule-sentence"
+TC-074,Test aturan (negatif): Delegasi harus dapat diedit dan dibatalkan.,exception,tinggi,User berada di bagian '9. Task Delegation' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Delegasi harus dapat diedit dan dibatalkan.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Delegasi harus dapat diedit dan dibatalkan."".",9. Task Delegation,"9. Task Delegation, exception, rule-sentence"
+TC-075,Test aturan: Request dengan Jenis Anggaran Non Budget dan Over Budget harus meng…,fungsi,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi sesuai aturan: Request dengan Jenis Anggaran Non Budget dan Over Budget harus mengikuti jalur approval yang berbeda sesuai kantor cabang sampai tingkat SPV Finance Pusat.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Request dengan Jenis Anggaran Non Budget dan Over Budget harus mengikuti jalur approval yang berbeda sesuai kantor cabang sampai tingkat SPV Finance Pusat."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, fungsi, rule-sentence"
+TC-076,Test aturan (negatif): Request dengan Jenis Anggaran Non Budget dan Over Budget harus meng…,exception,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Request dengan Jenis Anggaran Non Budget dan Over Budget harus mengikuti jalur approval yang berbeda sesuai kantor cabang sampai tingkat SPV Finance Pusat.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Request dengan Jenis Anggaran Non Budget dan Over Budget harus mengikuti jalur approval yang berbeda sesuai kantor cabang sampai tingkat SPV Finance Pusat."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, exception, rule-sentence"
+TC-077,Test aturan: Jalur dari SPV Finance Pusat ke atas harus sama untuk semua kantor…,fungsi,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi sesuai aturan: Jalur dari SPV Finance Pusat ke atas harus sama untuk semua kantor cabang.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Jalur dari SPV Finance Pusat ke atas harus sama untuk semua kantor cabang."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, fungsi, rule-sentence"
+TC-078,Test aturan (negatif): Jalur dari SPV Finance Pusat ke atas harus sama untuk semua kantor…,exception,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Jalur dari SPV Finance Pusat ke atas harus sama untuk semua kantor cabang.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Jalur dari SPV Finance Pusat ke atas harus sama untuk semua kantor cabang."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, exception, rule-sentence"
+TC-079,Test aturan: Approval Direksi hanya diminta untuk kasus tertentu; kasus normal c…,exception,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi normal pada '10. Aturan Bisnis dan Validasi'
+2. Coba langgar aturan: Approval Direksi hanya diminta untuk kasus tertentu; kasus normal cukup sampai Analyst.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Approval Direksi hanya diminta untuk kasus tertentu; kasus normal cukup sampai Analyst."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, exception, rule-sentence"
+TC-080,Test aturan: Revisi hanya boleh dilakukan pada tahap Kepala Administrasi dan men…,exception,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi normal pada '10. Aturan Bisnis dan Validasi'
+2. Coba langgar aturan: Revisi hanya boleh dilakukan pada tahap Kepala Administrasi dan mengembalikan request ke Staf Finance Cabang tanpa menghapus riwayat approval.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Revisi hanya boleh dilakukan pada tahap Kepala Administrasi dan mengembalikan request ke Staf Finance Cabang tanpa menghapus riwayat approval."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, exception, rule-sentence"
+TC-081,Test aturan: Reject pada tahap mana pun harus menghentikan proses dan mencatat a…,fungsi,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi sesuai aturan: Reject pada tahap mana pun harus menghentikan proses dan mencatat alasan penolakan.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Reject pada tahap mana pun harus menghentikan proses dan mencatat alasan penolakan."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, fungsi, rule-sentence"
+TC-082,Test aturan (negatif): Reject pada tahap mana pun harus menghentikan proses dan mencatat a…,exception,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Reject pada tahap mana pun harus menghentikan proses dan mencatat alasan penolakan.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Reject pada tahap mana pun harus menghentikan proses dan mencatat alasan penolakan."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, exception, rule-sentence"
+TC-083,Test aturan: Request yang sudah closed tidak boleh diubah.,exception,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi normal pada '10. Aturan Bisnis dan Validasi'
+2. Coba langgar aturan: Request yang sudah closed tidak boleh diubah.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Request yang sudah closed tidak boleh diubah."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, exception, rule-sentence"
+TC-084,"Test aturan: Setiap aksi approval harus mencatat user, waktu, dan komentar.",fungsi,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi sesuai aturan: Setiap aksi approval harus mencatat user, waktu, dan komentar.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Setiap aksi approval harus mencatat user, waktu, dan komentar."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, fungsi, rule-sentence"
+TC-085,"Test aturan (negatif): Setiap aksi approval harus mencatat user, waktu, dan komentar.",exception,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Setiap aksi approval harus mencatat user, waktu, dan komentar.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Setiap aksi approval harus mencatat user, waktu, dan komentar."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, exception, rule-sentence"
+TC-086,Test aturan: Total Biaya Pengajuan tidak boleh bernilai negatif dan tidak boleh…,exception,tinggi,User berada di bagian '10. Aturan Bisnis dan Validasi' dan sudah login,"1. Siapkan kondisi normal pada '10. Aturan Bisnis dan Validasi'
+2. Coba langgar aturan: Total Biaya Pengajuan tidak boleh bernilai negatif dan tidak boleh nol.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Total Biaya Pengajuan tidak boleh bernilai negatif dan tidak boleh nol."".",10. Aturan Bisnis dan Validasi,"10. Aturan Bisnis dan Validasi, exception, rule-sentence"
+TC-087,Test aturan: Aplikasi harus menampilkan halaman daftar maksimal 10 baris per hal…,fungsi,tinggi,User berada di bagian '11. Kebutuhan Non-Fungsional' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus menampilkan halaman daftar maksimal 10 baris per halaman dengan paging, jumlah data ditemukan, dan pilihan show.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus menampilkan halaman daftar maksimal 10 baris per halaman dengan paging, jumlah data ditemukan, dan pilihan show."".",11. Kebutuhan Non-Fungsional,"11. Kebutuhan Non-Fungsional, fungsi, rule-sentence"
+TC-088,Test aturan (negatif): Aplikasi harus menampilkan halaman daftar maksimal 10 baris per hal…,exception,tinggi,User berada di bagian '11. Kebutuhan Non-Fungsional' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus menampilkan halaman daftar maksimal 10 baris per halaman dengan paging, jumlah data ditemukan, dan pilihan show.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus menampilkan halaman daftar maksimal 10 baris per halaman dengan paging, jumlah data ditemukan, dan pilihan show."".",11. Kebutuhan Non-Fungsional,"11. Kebutuhan Non-Fungsional, exception, rule-sentence"
+TC-089,Test aturan: Aplikasi harus menampilkan pesan kesalahan yang jelas jika proses g…,fungsi,tinggi,User berada di bagian '11. Kebutuhan Non-Fungsional' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus menampilkan pesan kesalahan yang jelas jika proses gagal.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus menampilkan pesan kesalahan yang jelas jika proses gagal."".",11. Kebutuhan Non-Fungsional,"11. Kebutuhan Non-Fungsional, fungsi, rule-sentence"
+TC-090,Test aturan (negatif): Aplikasi harus menampilkan pesan kesalahan yang jelas jika proses g…,exception,tinggi,User berada di bagian '11. Kebutuhan Non-Fungsional' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus menampilkan pesan kesalahan yang jelas jika proses gagal.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus menampilkan pesan kesalahan yang jelas jika proses gagal."".",11. Kebutuhan Non-Fungsional,"11. Kebutuhan Non-Fungsional, exception, rule-sentence"
+TC-091,Test aturan: Aplikasi harus dapat diakses oleh seluruh kantor cabang tanpa konfi…,fungsi,tinggi,User berada di bagian '11. Kebutuhan Non-Fungsional' dan sudah login,"1. Siapkan kondisi sesuai aturan: Aplikasi harus dapat diakses oleh seluruh kantor cabang tanpa konfigurasi alur terpisah di sisi pengguna.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Aplikasi harus dapat diakses oleh seluruh kantor cabang tanpa konfigurasi alur terpisah di sisi pengguna."".",11. Kebutuhan Non-Fungsional,"11. Kebutuhan Non-Fungsional, fungsi, rule-sentence"
+TC-092,Test aturan (negatif): Aplikasi harus dapat diakses oleh seluruh kantor cabang tanpa konfi…,exception,tinggi,User berada di bagian '11. Kebutuhan Non-Fungsional' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Aplikasi harus dapat diakses oleh seluruh kantor cabang tanpa konfigurasi alur terpisah di sisi pengguna.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Aplikasi harus dapat diakses oleh seluruh kantor cabang tanpa konfigurasi alur terpisah di sisi pengguna."".",11. Kebutuhan Non-Fungsional,"11. Kebutuhan Non-Fungsional, exception, rule-sentence"
+TC-093,Test aturan: **File**: `poc-api-gateway.md` Contains 4 sections covering: - Fung…,fungsi,tinggi,User berada di bagian '5. Created Test POC File' dan sudah login,"1. Siapkan kondisi sesuai aturan: **File**: `poc-api-gateway.md` Contains 4 sections covering: - Fungsi Utama (functional category - ""harus"") - Batasan Performance (boundary category -…
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""**File**: `poc-api-gateway.md` Contains 4 sections covering: - Fungsi Utama (fungsi category - ""harus"") - Batasan Performance (batas category -…"".",5. Created Test POC File,"5. Created Test POC File, fungsi, rule-sentence"
+TC-094,Test aturan (negatif): **File**: `poc-api-gateway.md` Contains 4 sections covering: - Fung…,exception,tinggi,User berada di bagian '5. Created Test POC File' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: **File**: `poc-api-gateway.md` Contains 4 sections covering: - Fungsi Utama (functional category - ""harus"") - Batasan Performance (boundary category -…
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""**File**: `poc-api-gateway.md` Contains 4 sections covering: - Fungsi Utama (fungsi category - ""harus"") - Batasan Performance (batas category -…"".",5. Created Test POC File,"5. Created Test POC File, exception, rule-sentence"
+TC-095,Test aturan: Sistem harus melakukan autentikasi melalui API key untuk setiap req…,fungsi,tinggi,User berada di bagian 'Fungsi Utama' dan sudah login,"1. Siapkan kondisi sesuai aturan: Sistem harus melakukan autentikasi melalui API key untuk setiap request.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Sistem harus melakukan autentikasi melalui API key untuk setiap request."".",Fungsi Utama,"Fungsi Utama, fungsi, rule-sentence"
+TC-096,Test aturan (negatif): Sistem harus melakukan autentikasi melalui API key untuk setiap req…,exception,tinggi,User berada di bagian 'Fungsi Utama' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Sistem harus melakukan autentikasi melalui API key untuk setiap request.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Sistem harus melakukan autentikasi melalui API key untuk setiap request."".",Fungsi Utama,"Fungsi Utama, exception, rule-sentence"
+TC-097,Test aturan: User harus memiliki valid API key - Setiap request harus menyertaka…,exception,tinggi,User berada di bagian 'Fungsi Utama' dan sudah login,"1. Siapkan kondisi normal pada 'Fungsi Utama'
+2. Coba langgar aturan: User harus memiliki valid API key - Setiap request harus menyertakan header Authorization - Token kedaluarsa harus ditolak
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""User harus memiliki valid API key - Setiap request harus menyertakan header Authorization - Token kedaluarsa harus ditolak"".",Fungsi Utama,"Fungsi Utama, exception, rule-sentence"
+TC-098,Test aturan: Maksimal 100 request per menit untuk endpoint tertentu.,fungsi,sedang,User berada di bagian 'Batasan Performance' dan sudah login,"1. Siapkan kondisi sesuai aturan: Maksimal 100 request per menit untuk endpoint tertentu.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Maksimal 100 request per menit untuk endpoint tertentu."".",Batasan Performance,"Batasan Performance, fungsi, rule-sentence"
+TC-099,Test aturan: Maksimal 50 koneksi simultan - Timeout 30 deti untuk response,fungsi,sedang,User berada di bagian 'Batasan Performance' dan sudah login,"1. Siapkan kondisi sesuai aturan: Maksimal 50 koneksi simultan - Timeout 30 deti untuk response
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Maksimal 50 koneksi simultan - Timeout 30 deti untuk response"".",Batasan Performance,"Batasan Performance, fungsi, rule-sentence"
+TC-100,Test aturan: Sistem harus menangani error ketika input invalid.,fungsi,tinggi,User berada di bagian 'Penanganan Error' dan sudah login,"1. Siapkan kondisi sesuai aturan: Sistem harus menangani error ketika input invalid.
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Sistem harus menangani error ketika input invalid."".",Penanganan Error,"Penanganan Error, fungsi, rule-sentence"
+TC-101,Test aturan (negatif): Sistem harus menangani error ketika input invalid.,exception,tinggi,User berada di bagian 'Penanganan Error' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Sistem harus menangani error ketika input invalid.
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Sistem harus menangani error ketika input invalid."".",Penanganan Error,"Penanganan Error, exception, rule-sentence"
+TC-102,Test aturan: Request dengan API key tidak valid ditolak - Request tanpa otorisas…,exception,tinggi,User berada di bagian 'Penanganan Error' dan sudah login,"1. Siapkan kondisi normal pada 'Penanganan Error'
+2. Coba langgar aturan: Request dengan API key tidak valid ditolak - Request tanpa otorisasi menampilkan error 401 - Timeout koneksi ditangkap dengan baik
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Request dengan API key tidak valid ditolak - Request tanpa otorisasi menampilkan error 401 - Timeout koneksi ditangkap dengan baik"".",Penanganan Error,"Penanganan Error, exception, rule-sentence"
+TC-103,Test aturan: Endpoint: /api/v1/users - Method: POST - Harus sinkron user ke serv…,fungsi,tinggi,User berada di bagian 'Integrasi dengan Service Lain' dan sudah login,"1. Siapkan kondisi sesuai aturan: Endpoint: /api/v1/users - Method: POST - Harus sinkron user ke service lain dengan status 201 ```
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""Endpoint: /api/v1/users - Method: POST - Harus sinkron user ke service lain dengan status 201 ```"".",Integrasi dengan Service Lain,"Integrasi dengan Service Lain, fungsi, rule-sentence"
+TC-104,Test aturan (negatif): Endpoint: /api/v1/users - Method: POST - Harus sinkron user ke serv…,exception,tinggi,User berada di bagian 'Integrasi dengan Service Lain' dan sudah login,"1. Siapkan kondisi normal pada bagian ini
+2. Lewati pemenuhan aturan: Endpoint: /api/v1/users - Method: POST - Harus sinkron user ke service lain dengan status 201 ```
+3. Periksa apakah sistem menolak / menandai ketidaksesuaian","Sistem menolak atau menandai pelanggaran aturan: ""Endpoint: /api/v1/users - Method: POST - Harus sinkron user ke service lain dengan status 201 ```"".",Integrasi dengan Service Lain,"Integrasi dengan Service Lain, exception, rule-sentence"
+TC-105,Test aturan: **MCP Generate Testcase** adalah server MCP (Model Context Protocol…,fungsi,sedang,User berada di bagian 'MCP Generate Testcase' dan sudah login,"1. Siapkan kondisi sesuai aturan: **MCP Generate Testcase** adalah server MCP (Model Context Protocol) yang mengotomatisasi pembuatan test case dari dokumen Proof of Concept (POC).
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""**MCP Generate Testcase** adalah server MCP (Model Context Protocol) yang mengotomatisasi pembuatan test case dari dokumen Proof of Concept (POC)."".",MCP Generate Testcase,"MCP Generate Testcase, fungsi, rule-sentence"
+TC-106,"Test batas angka ` — 3 karakter (batas bawah, valid)",batas,tinggi,Form pada bagian 'Fitur' terbuka dan user sudah login,"1. Isi 'batas angka `' dengan 3 karakter
+2. Simpan / submit form
+3. Amati respons sistem","Input diterima, nilai 3 karakter tersimpan tanpa error.",Fitur,"batas angka `, batas, rule"
+TC-107,"Test batas angka ` — 2 karakter (di bawah batas bawah, ditolak)",batas,tinggi,Form pada bagian 'Fitur' terbuka dan user sudah login,"1. Isi 'batas angka `' dengan 2 karakter
+2. Simpan / submit form
+3. Amati respons sistem","Sistem menolak input dan menampilkan pesan: ""Judul minimal 3 karakter.""",Fitur,"batas angka `, batas, rule"
+TC-108,"Test batas angka ` — 120 karakter (batas atas, valid)",batas,tinggi,Form pada bagian 'Fitur' terbuka dan user sudah login,"1. Isi 'batas angka `' dengan 120 karakter
+2. Simpan / submit form
+3. Amati respons sistem","Input diterima, nilai 120 karakter tersimpan tanpa error.",Fitur,"batas angka `, batas, rule"
+TC-109,"Test batas angka ` — 121 karakter (di atas batas atas, ditolak)",batas,tinggi,Form pada bagian 'Fitur' terbuka dan user sudah login,"1. Isi 'batas angka `' dengan 121 karakter
+2. Simpan / submit form
+3. Amati respons sistem","Sistem menolak input dan menampilkan pesan: ""Judul minimal 3 karakter.""",Fitur,"batas angka `, batas, rule"
+TC-110,"Test ` — 10 MB (batas maksimum, valid)",batas,tinggi,Form pada bagian 'Fitur' terbuka dan user sudah login,"1. Isi '`' dengan 10 MB
+2. Simpan / submit form
+3. Amati respons sistem","Input diterima, nilai 10 MB tersimpan tanpa error.",Fitur,"`, batas, rule"
+TC-111,"Test ` — 11 MB (melebihi batas maksimum, ditolak)",batas,tinggi,Form pada bagian 'Fitur' terbuka dan user sudah login,"1. Isi '`' dengan 11 MB
+2. Simpan / submit form
+3. Amati respons sistem","Sistem menolak input dengan pesan validasi yang jelas, data tidak tersimpan.",Fitur,"`, batas, rule"
+TC-112,"Test karakter`, `Qty — 1 (batas minimum, valid)",batas,tinggi,Form pada bagian 'Fitur' terbuka dan user sudah login,"1. Isi 'karakter`, `Qty' dengan 1
+2. Simpan / submit form
+3. Amati respons sistem","Input diterima, nilai 1 tersimpan tanpa error.",Fitur,"karakter`, `Qty, batas, rule"
+TC-113,"Test karakter`, `Qty — 0 (di bawah batas minimum, ditolak)",batas,tinggi,Form pada bagian 'Fitur' terbuka dan user sudah login,"1. Isi 'karakter`, `Qty' dengan 0
+2. Simpan / submit form
+3. Amati respons sistem","Sistem menolak input dan menampilkan pesan: ""Judul minimal 3 karakter.""",Fitur,"karakter`, `Qty, batas, rule"
+TC-114,Test aturan: **Parsing POC Document**: Baca dan parse file markdown/txt menjadi…,fungsi,tinggi,User berada di bagian 'Fitur' dan sudah login,"1. Siapkan kondisi sesuai aturan: **Parsing POC Document**: Baca dan parse file markdown/txt menjadi struktur section hierarkis - **Generasi Test Case Otomatis**: Generate test case…
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""**Parsing POC Document**: Baca dan parse file markdown/txt menjadi struktur section hierarkis - **Generasi Test Case Otomatis**: Generate test case…"".",Fitur,"Fitur, fungsi, rule-sentence"
+TC-115,Test validasi: Judul minimal 3 karakter.,exception,tinggi,User berada di bagian 'Fitur',"1. Picu kondisi yang melanggar aturan pada bagian ini
+2. Submit form / aksi
+3. Periksa pesan yang muncul di UI","Sistem menampilkan pesan: ""Judul minimal 3 karakter."" dan tidak menyimpan data.",Fitur,"test, exception, validation-message"
+TC-116,Test POST /api/ — respons dan validasi,integrasi,tinggi,"Service berjalan, user terautentikasi sesuai aturan bagian ini","1. Kirim request POST /api/ dengan payload valid
+2. Periksa status code dan body respons
+3. Kirim request POST /api/ dengan payload tidak valid
+4. Periksa status code dan pesan error",Request valid menghasilkan status 2xx; request tidak valid ditolak 4xx dengan pesan jelas.,Fitur,"/api/, integrasi, api"
+TC-117,Test opsi X pada Fitur,fungsi,tinggi,User membuka bagian 'Fitur',"1. Pilih opsi 'X'
+2. Lanjutkan alur sampai selesai
+3. Periksa perilaku sistem sesuai opsi yang dipilih",Sistem memproses alur dengan mode 'X' sesuai aturan POC.,Fitur,"X, fungsi, option"
+TC-118,Test opsi Y pada Fitur,fungsi,tinggi,User membuka bagian 'Fitur',"1. Pilih opsi 'Y'
+2. Lanjutkan alur sampai selesai
+3. Periksa perilaku sistem sesuai opsi yang dipilih",Sistem memproses alur dengan mode 'Y' sesuai aturan POC.,Fitur,"Y, fungsi, option"
+TC-119,Test aturan: **`generate_testcases`** - Generate test case dari dokumen POC - `f…,fungsi,sedang,User berada di bagian 'Via MCP Tools' dan sudah login,"1. Siapkan kondisi sesuai aturan: **`generate_testcases`** - Generate test case dari dokumen POC - `file_path`: Path ke file POC - `max_per_section`: Maksimal test case per section (default:…
+2. Jalankan alur yang diatur pada bagian ini
+3. Periksa hasil terhadap aturan tersebut","Sistem berperilaku sesuai aturan: ""**`generate_testcases`** - Generate test case dari dokumen POC - `file_path`: Path ke file POC - `max_per_section`: Maksimal test case per section (default:…"".",Via MCP Tools,"Via MCP Tools, fungsi, rule-sentence"
+TC-120,"Test aturan: Server ini hanya membaca file teks (`.md`/`.txt`), jadi PDF/dokumen…",exception,tinggi,User berada di bagian 'Konversi PDF ke POC' dan sudah login,"1. Siapkan kondisi normal pada 'Konversi PDF ke POC'
+2. Coba langgar aturan: Server ini hanya membaca file teks (`.md`/`.txt`), jadi PDF/dokumen requirement harus dijadikan markdown dulu: ```bash python tools/pdf_to_poc.py…
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Server ini hanya membaca file teks (`.md`/`.txt`), jadi PDF/dokumen requirement harus dijadikan markdown dulu: ```bash python tools/pdf_to_poc.py…"".",Konversi PDF ke POC,"Konversi PDF ke POC, exception, rule-sentence"
+TC-121,Test aturan: Test case hasil ekstraksi aturan (`kind=rule`) diprioritaskan; temp…,exception,tinggi,User berada di bagian 'Generate Semua Dokumen ke Satu File' dan sudah login,"1. Siapkan kondisi normal pada 'Generate Semua Dokumen ke Satu File'
+2. Coba langgar aturan: Test case hasil ekstraksi aturan (`kind=rule`) diprioritaskan; template generic hanya dipakai untuk melengkapi sampai `--total` terpenuhi.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""Test case hasil ekstraksi aturan (`kind=rule`) diprioritaskan; template generic hanya dipakai untuk melengkapi sampai `--total` terpenuhi."".",Generate Semua Dokumen ke Satu File,"Generate Semua Dokumen ke Satu File, exception, rule-sentence"
+TC-122,Test aturan: User harus melakukan login sebelum mengakses endpoint tertentu.,exception,tinggi,User berada di bagian 'Fitur Utama' dan sudah login,"1. Siapkan kondisi normal pada 'Fitur Utama'
+2. Coba langgar aturan: User harus melakukan login sebelum mengakses endpoint tertentu.
+3. Periksa respons sistem terhadap pelanggaran","Sistem menolak aksi sesuai aturan: ""User harus melakukan login sebelum mengakses endpoint tertentu."".",Fitur Utama,"Fitur Utama, exception, rule-sentence"
+TC-123,Test POST /api/auth/login — respons dan validasi,integrasi,tinggi,"Service berjalan, user terautentikasi sesuai aturan bagian ini","1. Kirim request POST /api/auth/login dengan payload valid
+2. Periksa status code dan body respons
+3. Kirim request POST /api/auth/login dengan payload tidak valid
+4. Periksa status code dan pesan error",Request valid menghasilkan status 2xx; request tidak valid ditolak 4xx dengan pesan jelas.,Endpoint Auth,"/api/auth/login, integrasi, api"
+TC-124,Test POC: Aplikasi Request Biaya Distributor - scenario 1 (biaya),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: POC: Aplikasi Request Biaya Distributor
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: POC: Aplikasi Request Biaya Distributor
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",POC: Aplikasi Request Biaya Distributor,"biaya, fungsi, poc-request-biaya-distribusi"
+TC-125,Test POC: Aplikasi Request Biaya Distributor - scenario 2 (request),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: POC: Aplikasi Request Biaya Distributor
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: POC: Aplikasi Request Biaya Distributor
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",POC: Aplikasi Request Biaya Distributor,"request, fungsi, poc-request-biaya-distribusi"
+TC-126,Test POC: Aplikasi Request Biaya Distributor - scenario 3 (budget),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: POC: Aplikasi Request Biaya Distributor
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: POC: Aplikasi Request Biaya Distributor
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",POC: Aplikasi Request Biaya Distributor,"budget, fungsi, poc-request-biaya-distribusi"
+TC-127,Test POC: Aplikasi Request Biaya Distributor - scenario 4 (cabang),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: POC: Aplikasi Request Biaya Distributor
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: POC: Aplikasi Request Biaya Distributor
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",POC: Aplikasi Request Biaya Distributor,"cabang, fungsi, poc-request-biaya-distribusi"
+TC-128,Test POC: Aplikasi Request Biaya Distributor - scenario 5 (dokumen),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: POC: Aplikasi Request Biaya Distributor
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: POC: Aplikasi Request Biaya Distributor
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",POC: Aplikasi Request Biaya Distributor,"dokumen, fungsi, poc-request-biaya-distribusi"
+TC-129,Test 1. Tujuan dan Ruang Lingkup - scenario 1 (aplikasi),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 1. Tujuan dan Ruang Lingkup
+2. Akses modul/layanan terkait 'aplikasi'
+3. Jalankan operasi: 1. Tujuan dan Ruang Lingkup
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",1. Tujuan dan Ruang Lingkup,"aplikasi, fungsi, poc-request-biaya-distribusi"
+TC-130,Test 1. Tujuan dan Ruang Lingkup - scenario 2 (harus),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 1. Tujuan dan Ruang Lingkup
+2. Akses modul/layanan terkait 'aplikasi'
+3. Jalankan operasi: 1. Tujuan dan Ruang Lingkup
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",1. Tujuan dan Ruang Lingkup,"harus, fungsi, poc-request-biaya-distribusi"
+TC-131,Test 1. Tujuan dan Ruang Lingkup - scenario 3 (mampu),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 1. Tujuan dan Ruang Lingkup
+2. Akses modul/layanan terkait 'aplikasi'
+3. Jalankan operasi: 1. Tujuan dan Ruang Lingkup
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",1. Tujuan dan Ruang Lingkup,"mampu, fungsi, poc-request-biaya-distribusi"
+TC-132,Test 1. Tujuan dan Ruang Lingkup - scenario 4 (masing),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 1. Tujuan dan Ruang Lingkup
+2. Akses modul/layanan terkait 'aplikasi'
+3. Jalankan operasi: 1. Tujuan dan Ruang Lingkup
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",1. Tujuan dan Ruang Lingkup,"masing, fungsi, poc-request-biaya-distribusi"
+TC-133,Test 1. Tujuan dan Ruang Lingkup - scenario 5 (menampilkan),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 1. Tujuan dan Ruang Lingkup
+2. Akses modul/layanan terkait 'aplikasi'
+3. Jalankan operasi: 1. Tujuan dan Ruang Lingkup
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",1. Tujuan dan Ruang Lingkup,"menampilkan, fungsi, poc-request-biaya-distribusi"
+TC-134,Test 2. Aktor dan Hak Akses - scenario 1 (request),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 2. Aktor dan Hak Akses
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 2. Aktor dan Hak Akses
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",2. Aktor dan Hak Akses,"request, fungsi, poc-request-biaya-distribusi"
+TC-135,Test 2. Aktor dan Hak Akses - scenario 2 (biaya),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 2. Aktor dan Hak Akses
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 2. Aktor dan Hak Akses
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",2. Aktor dan Hak Akses,"biaya, fungsi, poc-request-biaya-distribusi"
+TC-136,Test 2. Aktor dan Hak Akses - scenario 3 (approve),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 2. Aktor dan Hak Akses
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 2. Aktor dan Hak Akses
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",2. Aktor dan Hak Akses,"approve, fungsi, poc-request-biaya-distribusi"
+TC-137,Test 2. Aktor dan Hak Akses - scenario 4 (finance),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 2. Aktor dan Hak Akses
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 2. Aktor dan Hak Akses
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",2. Aktor dan Hak Akses,"finance, fungsi, poc-request-biaya-distribusi"
+TC-138,Test 2. Aktor dan Hak Akses - scenario 5 (cabang),fungsi,sedang,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 2. Aktor dan Hak Akses
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 2. Aktor dan Hak Akses
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",2. Aktor dan Hak Akses,"cabang, fungsi, poc-request-biaya-distribusi"
+TC-139,Test 3. Alur Pengajuan Request Biaya - scenario 1 (request),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 3. Alur Pengajuan Request Biaya
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 3. Alur Pengajuan Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",3. Alur Pengajuan Request Biaya,"request, fungsi, poc-request-biaya-distribusi"
+TC-140,Test 3. Alur Pengajuan Request Biaya - scenario 2 (langkah),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 3. Alur Pengajuan Request Biaya
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 3. Alur Pengajuan Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",3. Alur Pengajuan Request Biaya,"langkah, fungsi, poc-request-biaya-distribusi"
+TC-141,Test 3. Alur Pengajuan Request Biaya - scenario 3 (biaya),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 3. Alur Pengajuan Request Biaya
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 3. Alur Pengajuan Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",3. Alur Pengajuan Request Biaya,"biaya, fungsi, poc-request-biaya-distribusi"
+TC-142,Test 3. Alur Pengajuan Request Biaya - scenario 4 (finance),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 3. Alur Pengajuan Request Biaya
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 3. Alur Pengajuan Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",3. Alur Pengajuan Request Biaya,"finance, fungsi, poc-request-biaya-distribusi"
+TC-143,Test 3. Alur Pengajuan Request Biaya - scenario 5 (cabang),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 3. Alur Pengajuan Request Biaya
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 3. Alur Pengajuan Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",3. Alur Pengajuan Request Biaya,"cabang, fungsi, poc-request-biaya-distribusi"
+TC-144,Test 4. Form Submit Request Biaya - scenario 1 (biaya),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 4. Form Submit Request Biaya
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: 4. Form Submit Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",4. Form Submit Request Biaya,"biaya, fungsi, poc-request-biaya-distribusi"
+TC-145,Test 4. Form Submit Request Biaya - scenario 2 (baris),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 4. Form Submit Request Biaya
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: 4. Form Submit Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",4. Form Submit Request Biaya,"baris, fungsi, poc-request-biaya-distribusi"
+TC-146,Test 4. Form Submit Request Biaya - scenario 3 (contoh),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 4. Form Submit Request Biaya
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: 4. Form Submit Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",4. Form Submit Request Biaya,"contoh, fungsi, poc-request-biaya-distribusi"
+TC-147,Test 4. Form Submit Request Biaya - scenario 4 (harga),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 4. Form Submit Request Biaya
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: 4. Form Submit Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",4. Form Submit Request Biaya,"harga, fungsi, poc-request-biaya-distribusi"
+TC-148,Test 4. Form Submit Request Biaya - scenario 5 (form),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 4. Form Submit Request Biaya
+2. Akses modul/layanan terkait 'biaya'
+3. Jalankan operasi: 4. Form Submit Request Biaya
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",4. Form Submit Request Biaya,"form, fungsi, poc-request-biaya-distribusi"
+TC-149,Test 5. Daftar Pending - scenario 1 (daftar),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 5. Daftar Pending
+2. Akses modul/layanan terkait 'daftar'
+3. Jalankan operasi: 5. Daftar Pending
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",5. Daftar Pending,"daftar, fungsi, poc-request-biaya-distribusi"
+TC-150,Test 5. Daftar Pending - scenario 2 (pending),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 5. Daftar Pending
+2. Akses modul/layanan terkait 'daftar'
+3. Jalankan operasi: 5. Daftar Pending
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",5. Daftar Pending,"pending, fungsi, poc-request-biaya-distribusi"
+TC-151,Test 5. Daftar Pending - scenario 3 (request),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 5. Daftar Pending
+2. Akses modul/layanan terkait 'daftar'
+3. Jalankan operasi: 5. Daftar Pending
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",5. Daftar Pending,"request, fungsi, poc-request-biaya-distribusi"
+TC-152,Test 5. Daftar Pending - scenario 4 (budget),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 5. Daftar Pending
+2. Akses modul/layanan terkait 'daftar'
+3. Jalankan operasi: 5. Daftar Pending
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",5. Daftar Pending,"budget, fungsi, poc-request-biaya-distribusi"
+TC-153,Test 5. Daftar Pending - scenario 5 (assignee),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 5. Daftar Pending
+2. Akses modul/layanan terkait 'daftar'
+3. Jalankan operasi: 5. Daftar Pending
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",5. Daftar Pending,"assignee, fungsi, poc-request-biaya-distribusi"
+TC-154,Test 6. Tracking Request - scenario 1 (request),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 6. Tracking Request
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 6. Tracking Request
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",6. Tracking Request,"request, fungsi, poc-request-biaya-distribusi"
+TC-155,Test 6. Tracking Request - scenario 2 (harus),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 6. Tracking Request
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 6. Tracking Request
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",6. Tracking Request,"harus, fungsi, poc-request-biaya-distribusi"
+TC-156,Test 6. Tracking Request - scenario 3 (activity),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 6. Tracking Request
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 6. Tracking Request
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",6. Tracking Request,"activity, fungsi, poc-request-biaya-distribusi"
+TC-157,Test 6. Tracking Request - scenario 4 (process),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 6. Tracking Request
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 6. Tracking Request
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",6. Tracking Request,"process, fungsi, poc-request-biaya-distribusi"
+TC-158,Test 6. Tracking Request - scenario 5 (menampilkan),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 6. Tracking Request
+2. Akses modul/layanan terkait 'request'
+3. Jalankan operasi: 6. Tracking Request
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",6. Tracking Request,"menampilkan, fungsi, poc-request-biaya-distribusi"
+TC-159,Test 7.1 Task Performance - scenario 1 (hari),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.1 Task Performance
+2. Akses modul/layanan terkait 'hari'
+3. Jalankan operasi: 7.1 Task Performance
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.1 Task Performance,"hari, fungsi, poc-request-biaya-distribusi"
+TC-160,Test 7.1 Task Performance - scenario 2 (delay),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.1 Task Performance
+2. Akses modul/layanan terkait 'hari'
+3. Jalankan operasi: 7.1 Task Performance
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.1 Task Performance,"delay, fungsi, poc-request-biaya-distribusi"
+TC-161,Test 7.1 Task Performance - scenario 3 (task),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.1 Task Performance
+2. Akses modul/layanan terkait 'hari'
+3. Jalankan operasi: 7.1 Task Performance
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.1 Task Performance,"task, fungsi, poc-request-biaya-distribusi"
+TC-162,Test 7.1 Task Performance - scenario 4 (kepala),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.1 Task Performance
+2. Akses modul/layanan terkait 'hari'
+3. Jalankan operasi: 7.1 Task Performance
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.1 Task Performance,"kepala, fungsi, poc-request-biaya-distribusi"
+TC-163,Test 7.1 Task Performance - scenario 5 (activity),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.1 Task Performance
+2. Akses modul/layanan terkait 'hari'
+3. Jalankan operasi: 7.1 Task Performance
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.1 Task Performance,"activity, fungsi, poc-request-biaya-distribusi"
+TC-164,Test 7.2 Performance Report by Approval - scenario 1 (activity),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.2 Performance Report by Approval
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 7.2 Performance Report by Approval
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.2 Performance Report by Approval,"activity, fungsi, poc-request-biaya-distribusi"
+TC-165,Test 7.2 Performance Report by Approval - scenario 2 (menampilkan),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.2 Performance Report by Approval
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 7.2 Performance Report by Approval
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.2 Performance Report by Approval,"menampilkan, fungsi, poc-request-biaya-distribusi"
+TC-166,Test 7.2 Performance Report by Approval - scenario 3 (delay),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.2 Performance Report by Approval
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 7.2 Performance Report by Approval
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.2 Performance Report by Approval,"delay, fungsi, poc-request-biaya-distribusi"
+TC-167,Test 7.2 Performance Report by Approval - scenario 4 (budget),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.2 Performance Report by Approval
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 7.2 Performance Report by Approval
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.2 Performance Report by Approval,"budget, fungsi, poc-request-biaya-distribusi"
+TC-168,Test 7.2 Performance Report by Approval - scenario 5 (hari),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.2 Performance Report by Approval
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 7.2 Performance Report by Approval
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.2 Performance Report by Approval,"hari, fungsi, poc-request-biaya-distribusi"
+TC-169,Test 7.3 Average Delay - scenario 1 (rata),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.3 Average Delay
+2. Akses modul/layanan terkait 'rata'
+3. Jalankan operasi: 7.3 Average Delay
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.3 Average Delay,"rata, fungsi, poc-request-biaya-distribusi"
+TC-170,Test 7.3 Average Delay - scenario 2 (task),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.3 Average Delay
+2. Akses modul/layanan terkait 'rata'
+3. Jalankan operasi: 7.3 Average Delay
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.3 Average Delay,"task, fungsi, poc-request-biaya-distribusi"
+TC-171,Test 7.3 Average Delay - scenario 3 (delay),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.3 Average Delay
+2. Akses modul/layanan terkait 'rata'
+3. Jalankan operasi: 7.3 Average Delay
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.3 Average Delay,"delay, fungsi, poc-request-biaya-distribusi"
+TC-172,Test 7.3 Average Delay - scenario 4 (hari),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.3 Average Delay
+2. Akses modul/layanan terkait 'rata'
+3. Jalankan operasi: 7.3 Average Delay
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.3 Average Delay,"hari, fungsi, poc-request-biaya-distribusi"
+TC-173,Test 7.3 Average Delay - scenario 5 (assignee),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.3 Average Delay
+2. Akses modul/layanan terkait 'rata'
+3. Jalankan operasi: 7.3 Average Delay
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.3 Average Delay,"assignee, fungsi, poc-request-biaya-distribusi"
+TC-174,Test 7.4 Leading Time - scenario 1 (leading),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.4 Leading Time
+2. Akses modul/layanan terkait 'leading'
+3. Jalankan operasi: 7.4 Leading Time
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.4 Leading Time,"leading, fungsi, poc-request-biaya-distribusi"
+TC-175,Test 7.4 Leading Time - scenario 2 (time),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.4 Leading Time
+2. Akses modul/layanan terkait 'leading'
+3. Jalankan operasi: 7.4 Leading Time
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.4 Leading Time,"time, fungsi, poc-request-biaya-distribusi"
+TC-176,Test 7.4 Leading Time - scenario 3 (request),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.4 Leading Time
+2. Akses modul/layanan terkait 'leading'
+3. Jalankan operasi: 7.4 Leading Time
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.4 Leading Time,"request, fungsi, poc-request-biaya-distribusi"
+TC-177,Test 7.4 Leading Time - scenario 4 (process),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.4 Leading Time
+2. Akses modul/layanan terkait 'leading'
+3. Jalankan operasi: 7.4 Leading Time
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.4 Leading Time,"process, fungsi, poc-request-biaya-distribusi"
+TC-178,Test 7.4 Leading Time - scenario 5 (cabang),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.4 Leading Time
+2. Akses modul/layanan terkait 'leading'
+3. Jalankan operasi: 7.4 Leading Time
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.4 Leading Time,"cabang, fungsi, poc-request-biaya-distribusi"
+TC-179,Test 7.5 Generate Report Jasper - scenario 1 (report),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.5 Generate Report Jasper
+2. Akses modul/layanan terkait 'report'
+3. Jalankan operasi: 7.5 Generate Report Jasper
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.5 Generate Report Jasper,"report, fungsi, poc-request-biaya-distribusi"
+TC-180,Test 7.5 Generate Report Jasper - scenario 2 (harus),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.5 Generate Report Jasper
+2. Akses modul/layanan terkait 'report'
+3. Jalankan operasi: 7.5 Generate Report Jasper
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.5 Generate Report Jasper,"harus, fungsi, poc-request-biaya-distribusi"
+TC-181,Test 7.5 Generate Report Jasper - scenario 3 (nama),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.5 Generate Report Jasper
+2. Akses modul/layanan terkait 'report'
+3. Jalankan operasi: 7.5 Generate Report Jasper
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.5 Generate Report Jasper,"nama, fungsi, poc-request-biaya-distribusi"
+TC-182,Test 7.5 Generate Report Jasper - scenario 4 (performance),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.5 Generate Report Jasper
+2. Akses modul/layanan terkait 'report'
+3. Jalankan operasi: 7.5 Generate Report Jasper
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.5 Generate Report Jasper,"performance, fungsi, poc-request-biaya-distribusi"
+TC-183,Test 7.5 Generate Report Jasper - scenario 5 (perusahaan),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 7.5 Generate Report Jasper
+2. Akses modul/layanan terkait 'report'
+3. Jalankan operasi: 7.5 Generate Report Jasper
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",7.5 Generate Report Jasper,"perusahaan, fungsi, poc-request-biaya-distribusi"
+TC-184,Test 8. SLA Report - scenario 1 (activity),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 8. SLA Report
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 8. SLA Report
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",8. SLA Report,"activity, fungsi, poc-request-biaya-distribusi"
+TC-185,Test 8. SLA Report - scenario 2 (delay),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 8. SLA Report
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 8. SLA Report
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",8. SLA Report,"delay, fungsi, poc-request-biaya-distribusi"
+TC-186,Test 8. SLA Report - scenario 3 (request),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 8. SLA Report
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 8. SLA Report
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",8. SLA Report,"request, fungsi, poc-request-biaya-distribusi"
+TC-187,Test 8. SLA Report - scenario 4 (ratio),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 8. SLA Report
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 8. SLA Report
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",8. SLA Report,"ratio, fungsi, poc-request-biaya-distribusi"
+TC-188,Test 8. SLA Report - scenario 5 (task),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 8. SLA Report
+2. Akses modul/layanan terkait 'activity'
+3. Jalankan operasi: 8. SLA Report
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",8. SLA Report,"task, fungsi, poc-request-biaya-distribusi"
+TC-189,Test 9. Task Delegation - scenario 1 (user),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 9. Task Delegation
+2. Akses modul/layanan terkait 'user'
+3. Jalankan operasi: 9. Task Delegation
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",9. Task Delegation,"user, fungsi, poc-request-biaya-distribusi"
+TC-190,Test 9. Task Delegation - scenario 2 (date),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 9. Task Delegation
+2. Akses modul/layanan terkait 'user'
+3. Jalankan operasi: 9. Task Delegation
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",9. Task Delegation,"date, fungsi, poc-request-biaya-distribusi"
+TC-191,Test 9. Task Delegation - scenario 3 (assignment),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 9. Task Delegation
+2. Akses modul/layanan terkait 'user'
+3. Jalankan operasi: 9. Task Delegation
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",9. Task Delegation,"assignment, fungsi, poc-request-biaya-distribusi"
+TC-192,Test 9. Task Delegation - scenario 4 (task),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 9. Task Delegation
+2. Akses modul/layanan terkait 'user'
+3. Jalankan operasi: 9. Task Delegation
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",9. Task Delegation,"task, fungsi, poc-request-biaya-distribusi"
+TC-193,Test 9. Task Delegation - scenario 5 (delegasi),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 9. Task Delegation
+2. Akses modul/layanan terkait 'user'
+3. Jalankan operasi: 9. Task Delegation
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",9. Task Delegation,"delegasi, fungsi, poc-request-biaya-distribusi"
+TC-194,Test 10. Aturan Bisnis dan Validasi - scenario 1 (boleh),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 10. Aturan Bisnis dan Validasi
+2. Akses modul/layanan terkait 'boleh'
+3. Jalankan operasi: 10. Aturan Bisnis dan Validasi
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",10. Aturan Bisnis dan Validasi,"boleh, fungsi, poc-request-biaya-distribusi"
+TC-195,Test 10. Aturan Bisnis dan Validasi - scenario 2 (request),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 10. Aturan Bisnis dan Validasi
+2. Akses modul/layanan terkait 'boleh'
+3. Jalankan operasi: 10. Aturan Bisnis dan Validasi
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",10. Aturan Bisnis dan Validasi,"request, fungsi, poc-request-biaya-distribusi"
+TC-196,Test 10. Aturan Bisnis dan Validasi - scenario 3 (harus),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 10. Aturan Bisnis dan Validasi
+2. Akses modul/layanan terkait 'boleh'
+3. Jalankan operasi: 10. Aturan Bisnis dan Validasi
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",10. Aturan Bisnis dan Validasi,"harus, fungsi, poc-request-biaya-distribusi"
+TC-197,Test 10. Aturan Bisnis dan Validasi - scenario 4 (tidak),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 10. Aturan Bisnis dan Validasi
+2. Akses modul/layanan terkait 'boleh'
+3. Jalankan operasi: 10. Aturan Bisnis dan Validasi
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",10. Aturan Bisnis dan Validasi,"tidak, fungsi, poc-request-biaya-distribusi"
+TC-198,Test 10. Aturan Bisnis dan Validasi - scenario 5 (approval),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 10. Aturan Bisnis dan Validasi
+2. Akses modul/layanan terkait 'boleh'
+3. Jalankan operasi: 10. Aturan Bisnis dan Validasi
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",10. Aturan Bisnis dan Validasi,"approval, fungsi, poc-request-biaya-distribusi"
+TC-199,Test 11. Kebutuhan Non-Fungsional - scenario 1 (aplikasi),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 11. Kebutuhan Non-Fungsional
+2. Akses modul/layanan terkait 'aplikasi'
+3. Jalankan operasi: 11. Kebutuhan Non-Fungsional
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",11. Kebutuhan Non-Fungsional,"aplikasi, fungsi, poc-request-biaya-distribusi"
+TC-200,Test 11. Kebutuhan Non-Fungsional - scenario 2 (harus),fungsi,tinggi,User telah login / sistem dalam kondisi ready (ref: poc-request-biaya-distribusi),"1. Siapkan lingkungan yang sesuai dengan syarat: 11. Kebutuhan Non-Fungsional
+2. Akses modul/layanan terkait 'aplikasi'
+3. Jalankan operasi: 11. Kebutuhan Non-Fungsional
+4. Verifikasi output sesuai dengan spesifikasi POC","Sistem menghasilkan output yang sesuai dengan spesifikasi POC, tanpa error.",11. Kebutuhan Non-Fungsional,"harus, fungsi, poc-request-biaya-distribusi"

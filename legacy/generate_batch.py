@@ -1,3 +1,5 @@
+# DEPRECATED: This file is kept for historical reference.
+# Please use tools/combined_generator.py for all test case generation needs.
 """Generate test case dari semua POC di docs/ menjadi satu set output.
 
 Contoh:
