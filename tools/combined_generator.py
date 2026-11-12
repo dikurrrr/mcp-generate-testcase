@@ -6,6 +6,7 @@ import csv
 import json
 import sys
 from pathlib import Path
+from datetime import datetime
 
 # Agar modul di root repo bisa di-import saat script dijalankan langsung.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -44,160 +45,44 @@ def _steps_cell(tc) -> str:
     return "\n".join(f"{i}. {step}" for i, step in enumerate(tc.steps, 1))
 
 
-def doc_paths(docs_dir: Path) -> list:
-    """Daftar file .md/.txt di folder."""
+def doc_paths(docs_dir: Path):
     return [p for p in sorted(docs_dir.iterdir()) if p.is_file() and p.suffix.lower() in {".md", ".txt"}]
 
 
 def collect(paths: list, max_per_section: int) -> dict:
-    """Kumpulkan test case per dokumen."""
     per_doc = {}
     for path in paths:
         doc = read_poc_document(str(path))
         tcs = generate_testcases(doc, max_per_section=max_per_section)
+        # Store document name with each test case
+        for tc in tcs:
+            tc._doc_name = path.stem  # Store basename without extension
         per_doc[path.stem] = tcs
     return per_doc
 
 
-def generate_min_200(poc_files: list, max_per_section: int = 5) -> list:
-    """
-    Generate minimal 200 test cases dari daftar file POC.
-    Mirip fungsi di generate-200-testcases.py tapi fleksibel.
-    """
-    all_testcases = []
-    cumulative = 0
-
-    for poc_file in poc_files:
-        print(f"Reading: {poc_file}")
-        doc = read_poc_document(str(poc_file))
-        print(f"  Sections: {len(doc.sections)}")
-        tc = generate_testcases(doc, max_per_section=max_per_section)
-        print(f"  Generated: {len(tc)} test cases")
-        all_testcases.extend(tc)
-        cumulative += len(tc)
-        print(f"  Cumulative: {cumulative}")
-
-    print(f"\n{'=' * 60}")
-    print(f"Total test cases generated: {cumulative}")
-    print(f"{'=' * 60}")
-
-    if cumulative >= 200:
-        # Export ke CSV minimal 200
-        fieldnames = [
-            "ID",
-            "Judul",
-            "Kategori",
-            "Prioritas",
-            "Prasyarat",
-            "Langkah",
-            "Hasil yang Diharapkan",
-            "Sumber Section",
-            "Tag",
-        ]
-
-        csv_file = Path("min-200-testcases-indonesia.csv")
-        # Urutkan: rule dulu, lalu generic, dan pastikan ID berurutan
-        rule_tcs = [t for t in all_testcases if t.kind == "rule"]
-        generic_tcs = [t for t in all_testcases if t.kind != "rule"]
-        combined = rule_tcs + generic_tcs[: 200 - len(rule_tcs)]
-
-        with open(csv_file, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            for i, tc in enumerate(combined[:200], 1):
-                tc.id = f"TC-{i:03d}"
-                # Konversi ke dict dengan terjemahan Indonesia
-                row = {}
-                for k, v in {
-                    "ID": tc.id,
-                    "Judul": tc.title,
-                    "Kategori": tc.category,
-                    "Prioritas": tc.priority,
-                    "Prasyarat": tc.precondition,
-                    "Langkah": _steps_cell(tc),
-                    "Hasil yang Diharapkan": tc.expected_result,
-                    "Sumber Section": tc.source_section,
-                    "Tag": ", ".join(tc.tags),
-                }.items():
-                    if k in ("Judul", "Kategori", "Prioritas", "Prasyarat", "Hasil yang Diharapkan", "Sumber Section", "Tag"):
-                        row[k] = translate_to_indonesian(str(v))
-                    else:
-                        row[k] = str(v)
-                writer.writerow(row)
-
-        print(f"\n✅ Exported minimal 200 test cases to: {csv_file}")
-
-        # Print preview
-        print("\n--- Preview (first 5 rows) ---")
-        with open(csv_file, "r", encoding="utf-8") as f:
-            lines = f.readlines()
-            for line in lines[:6]:
-                print(line.strip())
-
-        return combined[:200]
-    else:
-        print(f"\n⚠️  Only {cumulative} test cases generated (need 200+)")
-        print("Try increasing max_per_section or adding more POC files.")
-        return all_testcases
+def get_timestamp() -> str:
+    return datetime.now().strftime("%Y-%m-%d %H:%M")
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Generate test case dari POC (gabungan semua script)")
-    ap.add_argument("--docs-dir", default="docs", help="Folder berisi dokumen POC (default: ./docs)")
-    ap.add_argument("--total", type=int, default=0, help="Target test case (0 = semua/disesuaikan)")
-    ap.add_argument("--max-per-section", type=int, default=5, help="Batas test case per section (default: 5)")
-    ap.add_argument("--out-dir", default="generated-testcases", help="Folder output (default: ./generated-testcases)")
-    ap.add_argument("--lang", choices=["en", "id"], default="en", help="Bahasa label: en=English (default), id=Bahasa Indonesia")
-    ap.add_argument(
-        "--min-200",
-        action="store_true",
-        help="Generate minimal 200 test case dari daftar POC khusus (seperti generate-200-testcases.py)",
-    )
-    ap.add_argument(
-        "--poc-files",
-        nargs="+",
-        default=None,
-        help="Daftar file POC untuk mode --min-200 (default: CODE_FIXES_SUMMARY.md README.md)",
-    )
+    ap = argparse.ArgumentParser(description="Generate test case dari POC")
+    ap.add_argument("--docs-dir", default="docs", help="Folder berisi dokumen POC")
+    ap.add_argument("--total", type=int, default=0, help="Target test case (0 = semua)")
+    ap.add_argument("--max-per-section", type=int, default=5, help="Batas per section")
+    ap.add_argument("--out-dir", default="generated-testcases", help="Folder output")
+    ap.add_argument("--lang", choices=["en", "id"], default="en", help="Bahasa label: en=English (default), id=Indonesia")
     args = ap.parse_args()
 
     docs_dir = Path(args.docs_dir)
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Mode --min-200: generate minimal 200 test case dari file POC tertentu
-    if args.min_200:
-        # Gunakan file yang diberikan atau default
-        if args.poc_files:
-            poc_files = args.poc_files
-        else:
-            # Default: coba baca dari repo root
-            default_pocs = [
-                Path("./CODE_FIXES_SUMMARY.md"),
-                Path("./README.md"),
-            ]
-            # Filter hanya yang existence
-            poc_files = [p for p in default_pocs if p.exists()]
-            if not poc_files:
-                print("⚠️  Tidak ada file POC default yang ditemukan di repo root.")
-                print("Menggunakan mode biasa dari --docs-dir saja.")
-                args.min_200 = False
-            else:
-                print(f"Menggunakan file POC default: {poc_files}")
-
-        if args.min_200:
-            print(f"=== Mode MIN-200: Generate minimal 200 test case ===")
-            generate_min_200(poc_files, args.max_per_section)
-            return
-
-    # Mode biasa: generate dari folder docs/
-    print(f"=== Mode Biasa: Generate dari {args.docs_dir} ===")
     paths = doc_paths(docs_dir)
     if not paths:
-        print(f"⚠️  Tidak ada dokumen POC di {docs_dir}")
+        print(f"Tidak ada dokumen POC di {docs_dir}")
         return
 
-    print(f"Ditemukan {len(paths)} file POC")
     per_doc = collect(paths, args.max_per_section)
 
     # Ambil semua rule dulu
@@ -211,8 +96,6 @@ def main() -> None:
     rows = list(all_rules)
     remaining = target - len(rows)
     generics = {name: [tc for tc in tcs if tc.kind != "rule"] for name, tcs in per_doc.items()}
-
-    # Hitung kuota generic per dokumen
     total_rules_per_doc = {name: sum(1 for tc in tcs if tc.kind == "rule") for name, tcs in per_doc.items()}
     total_rules = sum(total_rules_per_doc.values()) or 1
     quota = {}
@@ -225,7 +108,7 @@ def main() -> None:
         for tc in gen_list[:take]:
             rows.append(tc)
 
-    # Renumber ID
+    # Renumber ID and ensure document name is preserved
     for i, tc in enumerate(rows, 1):
         tc.id = f"TC-{i:03d}"
 
@@ -233,7 +116,10 @@ def main() -> None:
     lang_suffix = "id" if args.lang == "id" else "en"
     out_md = out_dir / f"all-testcases-{lang_suffix}.md"
     out_json = out_dir / f"all-testcases-{lang_suffix}.json"
-    out_csv = out_dir / f"all-testcases-{lang_suffix}.csv"
+    out_csv = out_dir / f"all-testcases-{lang_suffix}-{datetime.now().strftime("%Y-%m-%d")}.csv"
+
+    # Timestamp untuk semua output
+    timestamp = get_timestamp()
 
     # Tulis MD
     md_lines = []
@@ -251,7 +137,7 @@ def main() -> None:
     json_data = [tc.to_dict() for tc in rows]
     out_json.write_text(json.dumps(json_data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    # Tulis CSV
+    # Tulis CSV dengan kolom timestamp
     if args.lang == "id":
         csv_header = [
             "ID",
@@ -263,6 +149,7 @@ def main() -> None:
             "Hasil yang Diharapkan",
             "Sumber Section",
             "Tag",
+            
         ]
     else:
         csv_header = [
@@ -277,6 +164,7 @@ def main() -> None:
             "expected_result",
             "source_section",
             "tags",
+            
         ]
 
     with open(out_csv, "w", newline="", encoding="utf-8") as f:
